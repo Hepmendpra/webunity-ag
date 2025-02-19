@@ -42,9 +42,144 @@
         "desktop_content_position": "bottom-left",
         "mediaheight": "medium"
       }
+    },
+    "scrolling_text_qLfJTb": {
+      "type": "scrolling-text",
+      "blocks": {
+        "text_aaBXEr": {
+          "type": "text",
+          "settings": {
+            "title": "High Quality Ingredients"
+          }
+        },
+        "text_QLmyrN": {
+          "type": "text",
+          "settings": {
+            "title": "Independently Certified"
+          }
+        },
+        "text_YXtKdR": {
+          "type": "text",
+          "settings": {
+            "title": "Expert Driven"
+          }
+        },
+        "text_GGqeqA": {
+          "type": "text",
+          "settings": {
+            "title": "Shipped Internationally"
+          }
+        },
+        "text_3ntAgq": {
+          "type": "text",
+          "settings": {
+            "title": "High Quality Ingredients"
+          }
+        },
+        "text_KrweA4": {
+          "type": "text",
+          "settings": {
+            "title": "Independently Certified"
+          }
+        },
+        "text_QwEfBR": {
+          "type": "text",
+          "settings": {
+            "title": "Expert Driven"
+          }
+        },
+        "text_H9mX3j": {
+          "type": "text",
+          "settings": {
+            "title": "Shipped Internationally"
+          }
+        },
+        "text_zBWYrj": {
+          "type": "text",
+          "settings": {
+            "title": "High Quality Ingredients"
+          }
+        },
+        "text_kAHQEf": {
+          "type": "text",
+          "settings": {
+            "title": "Independently Certified"
+          }
+        },
+        "text_NdGNR9": {
+          "type": "text",
+          "settings": {
+            "title": "Expert Driven"
+          }
+        },
+        "text_GjixTW": {
+          "type": "text",
+          "settings": {
+            "title": "High Quality Ingredients"
+          }
+        },
+        "text_JfNbMT": {
+          "type": "text",
+          "settings": {
+            "title": "Independently Certified"
+          }
+        },
+        "text_QGGxRg": {
+          "type": "text",
+          "settings": {
+            "title": "Expert Driven"
+          }
+        },
+        "text_DqJ9qK": {
+          "type": "text",
+          "settings": {
+            "title": "High Quality Ingredients"
+          }
+        },
+        "text_TDnpKq": {
+          "type": "text",
+          "settings": {
+            "title": "Independently Certified"
+          }
+        },
+        "text_YXQEbV": {
+          "type": "text",
+          "settings": {
+            "title": "Expert Driven"
+          }
+        }
+      },
+      "block_order": [
+        "text_aaBXEr",
+        "text_QLmyrN",
+        "text_YXtKdR",
+        "text_GGqeqA",
+        "text_3ntAgq",
+        "text_KrweA4",
+        "text_QwEfBR",
+        "text_H9mX3j",
+        "text_zBWYrj",
+        "text_kAHQEf",
+        "text_NdGNR9",
+        "text_GjixTW",
+        "text_JfNbMT",
+        "text_QGGxRg",
+        "text_DqJ9qK",
+        "text_TDnpKq",
+        "text_YXQEbV"
+      ],
+      "settings": {
+        "BgColor": "#000",
+        "Color": "#fff",
+        "scrolling_speed": 16,
+        "transition": "right-left",
+        "FontSizeDesk": 14,
+        "FontSizeMob": 16
+      }
     }
   },
   "order": [
-    "video_overlay_text_gARVYf"
+    "video_overlay_text_gARVYf",
+    "scrolling_text_qLfJTb"
   ]
 }
