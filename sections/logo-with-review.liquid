@@ -18,7 +18,7 @@
               <div class="star--image-main">
                 {% for i in (1..section.settings.count) %}
                   {% if section.settings.count != blank %}
-                    <img src="{{ section.settings.image | img_url: 'master' }}">
+                    <img src="{{ section.settings.image | img_url: 'master' }}" width="{{section.settings.image.width}}" height="{{section.settings.image.height}}">
                   {% endif %}
                 {% endfor %}
               </div>
@@ -36,7 +36,7 @@
           {% for block in section.blocks %}
             {% if block.settings.image != blank %}
               <div class="review--logo-image">
-                <img src="{{ block.settings.image | img_url: 'master' }}">
+                <img src="{{ block.settings.image | img_url: 'master' }}" width="{{section.settings.image.width}}" height="{{section.settings.image.height}}">
               </div>
             {% endif %}
           {% endfor %}
