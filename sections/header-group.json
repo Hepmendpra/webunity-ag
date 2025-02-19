@@ -46,7 +46,7 @@
         "buttonname": "Men",
         "buttonurl": "/",
         "BgColor1": "#e4e4e4",
-        "Color1": "#ffffff",
+        "Color1": "#000000",
         "btnimageshow": true,
         "buttonname2": "Take The Quiz",
         "buttonurl2": "/",
