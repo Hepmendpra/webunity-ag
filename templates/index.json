@@ -176,10 +176,92 @@
         "FontSizeDesk": 14,
         "FontSizeMob": 16
       }
+    },
+    "logo_with_review_fyCcHC": {
+      "type": "logo-with-review",
+      "blocks": {
+        "slide_HrJUL7": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Rolling_Stone_logo_1_1.png"
+          }
+        },
+        "slide_pAYwxw": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/image_45_1.png"
+          }
+        },
+        "slide_DaX9AB": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/LA_Weekly_logo_1.png"
+          }
+        },
+        "slide_KreyVP": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Herb_Updated_Logo_Dark_Version_1.png"
+          }
+        },
+        "slide_49CHU9": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/NewYorkTimes_1.png"
+          }
+        },
+        "slide_68MUVb": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Group_3.png"
+          }
+        },
+        "slide_GDFH3J": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Rolling_Stone_logo_1_1.png"
+          }
+        },
+        "slide_yyXL73": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/image_45_1.png"
+          }
+        }
+      },
+      "block_order": [
+        "slide_HrJUL7",
+        "slide_pAYwxw",
+        "slide_DaX9AB",
+        "slide_KreyVP",
+        "slide_49CHU9",
+        "slide_68MUVb",
+        "slide_GDFH3J",
+        "slide_yyXL73"
+      ],
+      "settings": {
+        "PaddingTopDesk": 24,
+        "PaddingBottomDesk": 24,
+        "PaddingTopMob": 24,
+        "PaddingBottomMob": 24,
+        "Bgcolor": "#f6f6f5",
+        "btnname": "#1 Doctor Recommended",
+        "btnurl": "",
+        "btnbgcolor": "#e0dcdc",
+        "btnfontcolor": "#000000",
+        "BtnFontDesk": 16,
+        "BtnFontMob": 14,
+        "image": "shopify://shop_images/Vector_11.svg",
+        "count": 5,
+        "text": "12,000+ 5-star Reviews",
+        "textfontdesk": 16,
+        "textfontmob": 14
+      }
     }
   },
   "order": [
     "video_overlay_text_gARVYf",
-    "scrolling_text_qLfJTb"
+    "scrolling_text_qLfJTb",
+    "logo_with_review_fyCcHC"
   ]
 }
