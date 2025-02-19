@@ -394,7 +394,15 @@
         {%- endif -%}
       </div>
       <div class="footer__copyright-cst-txt">
-        <span>{{ section.settings.small1 }} {% if section.settings.image1 != blank %}<img src="{{ section.settings.image1 | img_url: '15x15' }}">{% endif %} {{ section.settings.small2 }} {% if section.settings.image2 != blank %}<img src="{{ section.settings.image2 | img_url: '15x15' }}">{% endif %} {{ section.settings.small3 }}</span>
+        <span>{{ section.settings.small1 }} {% if section.settings.image1 != blank %}
+          <img src="{{ section.settings.image1 | img_url: '15x15' }}" width="{{section.settings.image1.width}}" height="{{section.settings.image1.height}}">
+        {% endif %} 
+        {{ section.settings.small2 }} 
+        {% if section.settings.image2 != blank %}
+          <img src="{{ section.settings.image2 | img_url: '15x15' }}" width="{{section.settings.image2.width}}" height="{{section.settings.image2.height}}">
+        {% endif %} 
+        {{ section.settings.small3 }} 
+    </span>
       </div>
     </div>
   </div>
