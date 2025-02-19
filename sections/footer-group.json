@@ -18,7 +18,7 @@
           "type": "text",
           "settings": {
             "heading": "Be a Part of Our Journey",
-            "subtext": "<p>Welcome to UNCMFRT. Sign up for <br/>exclusive <br/>content and we'll send you 10% off.</p>",
+            "subtext": "<p>Welcome to UNCMFRT. Sign up for exclusive <br/>content and we'll send you 10% off.</p>",
             "email_signup": true,
             "social_icons": false
           }
