@@ -11,6 +11,30 @@
   "sections": {
     "video_overlay_text_gARVYf": {
       "type": "video-overlay-text",
+      "blocks": {
+        "heading_X9caFt": {
+          "type": "heading",
+          "settings": {
+            "title": "Great things never came<br>\nfrom comfort zones.",
+            "FontSizeDesk": 70,
+            "FontSizeMob": 30,
+            "color": "#ffffff"
+          }
+        },
+        "button_mmY7AC": {
+          "type": "button",
+          "settings": {
+            "BtnBgColor": "#ffffff",
+            "BtnColor": "#000000",
+            "buttonname": "Shop Now",
+            "btnurl": "shopify://collections/all"
+          }
+        }
+      },
+      "block_order": [
+        "heading_X9caFt",
+        "button_mmY7AC"
+      ],
       "settings": {
         "video": "shopify://files/videos/d301a8a225de49e3bcc023d27e991643.HD-720p-3.0Mbps-42440670.mp4",
         "imageposter": "shopify://shop_images/Rectangle_3_2.png",
