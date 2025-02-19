@@ -1,0 +1,152 @@
+{{ 'scrolling-text.css' | asset_url | stylesheet_tag }}
+
+<section class="scrolling_announce scroll_{{ section.id }}">
+  <div class="marq_orig">
+    <div class="announcement-bar__link_scroll">
+      <div class="marquee_scroll">
+        {% if section.blocks.size != 0 %}
+          <ul class="ss-announcement-bar__message">
+            {% for block in section.blocks %}
+              {% if block.settings.title != blank %}
+                <li>
+                  {{ block.settings.title }}
+                </li>
+              {% endif %}
+            {% endfor %}
+          </ul>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>
+
+{% style %}
+  .scroll_{{ section.id }} .marq_orig{
+    background: {{section.settings.BgColor}};
+  }
+  .scroll_{{ section.id }} .marq_orig li{
+    color: {{section.settings.Color}};
+  }
+  .scroll_{{ section.id }} .marquee_scroll {
+    animation: marquesina var(--animation-duration, {{section.settings.scrolling_speed}}s) infinite normal linear 1s;
+  }
+
+  {% if section.settings.transition == 'left-right' %}
+    @keyframes marquesina {
+      0% {
+        transform: translateX(-50%);
+      }
+      100% {
+        transform: translateX(0%);
+      }
+    }
+  {% endif %}
+
+  {% if section.settings.transition == 'right-left' %}
+    @keyframes marquesina {
+      0% {
+        transform: translateX(0%);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+  {% endif %}
+
+
+  @media(min-width: 768px){
+    .scroll_{{ section.id }} .ss-announcement-bar__message li{
+      font-size: {{section.settings.FontSizeDesk}}px;
+    }
+  }
+  @media(max-width: 768px){
+    .scroll_{{ section.id }} .ss-announcement-bar__message li{
+      font-size: {{section.settings.FontSizeMob}}px;
+    }
+  }
+{% endstyle %}
+
+{% schema %}
+{
+  "name": "Scrolling announcement",
+  "settings": [
+    {
+      "type": "color",
+      "id": "BgColor",
+      "label": "Background color",
+      "default": "#000"
+    },
+    {
+      "type": "color",
+      "id": "Color",
+      "label": "Font color",
+      "default": "#fff"
+    },
+    {
+      "type": "range",
+      "id": "scrolling_speed",
+      "min": 10,
+      "max": 200,
+      "step": 2,
+      "unit": "s",
+      "label": "Scrolling speed",
+      "default": 10
+    },
+    {
+      "type": "select",
+      "id": "transition",
+      "label": "direction of text",
+      "options": [
+        {
+          "value": "left-right",
+          "label": "Left to right"
+        },
+        {
+          "value": "right-left",
+          "label": "Right to left"
+        }
+      ],
+      "default": "right-left"
+    },
+    {
+      "type": "range",
+      "id": "FontSizeDesk",
+      "min": 10,
+      "max": 70,
+      "step": 1,
+      "unit": "px",
+      "label": "slide font size (desktop)",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "FontSizeMob",
+      "min": 10,
+      "max": 70,
+      "step": 1,
+      "unit": "px",
+      "label": "slide font size (mobile)",
+      "default": 16
+    }
+  ],
+  "blocks": [
+    {
+      "type": "text",
+      "name": "text",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "title",
+          "default": "Free shipping"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Scrolling announcement"
+    }
+  ]
+}
+{% endschema %}

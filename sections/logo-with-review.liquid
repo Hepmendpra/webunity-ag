@@ -1,0 +1,243 @@
+{{ 'logo-with-review.css' | asset_url | stylesheet_tag }}
+
+<section class="logo-review logo-review-{{ section.id }}">
+  <div class="logo-review-bg">
+    <div class="logo-review-flex-items page-width">
+      <div class="logo-review-on-review">
+        <div class="logo-review-btn-logo">
+          {% if section.settings.btnname != blank %}
+            <a
+              class="logo-btn-text"
+              href="{% if section.settings.btnurl != blank %}{{ section.settings.btnurl }}{% else %}javascript:void(0);{% endif %}"
+            >
+              {{ section.settings.btnname }}
+            </a>
+          {% endif %}
+          {% if section.settings.image != blank %}
+            <div class="review_count_text">
+              <div class="star--image-main">
+                {% for i in (1..section.settings.count) %}
+                  {% if section.settings.count != blank %}
+                    <img src="{{ section.settings.image | img_url: 'master' }}">
+                  {% endif %}
+                {% endfor %}
+              </div>
+              {% if section.settings.text != blank %}
+                <div class="review-text-inner">
+                  <p>{{ section.settings.text }}</p>
+                </div>
+              {% endif %}
+            </div>
+          {% endif %}
+        </div>
+      </div>
+      {% if section.blocks.size != 0 %}
+        <div class="reveiw-image-logo">
+          {% for block in section.blocks %}
+            {% if block.settings.image != blank %}
+              <div class="review--logo-image">
+                <img src="{{ block.settings.image | img_url: 'master' }}">
+              </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+{% style %}
+  .logo-review-{{ section.id }} .logo-review-bg{
+    background: {{section.settings.Bgcolor}};
+  }
+
+  @media(min-width: 768px){
+    .logo-review-{{ section.id }} .logo-review-bg{
+      padding-top: {{section.settings.PaddingTopDesk}}px;
+      padding-bottom: {{section.settings.PaddingBottomDesk}}px;
+    }
+    .logo-review-{{ section.id }} .logo-btn-text{
+      font-size: {{section.settings.BtnFontDesk}}px;
+    }
+    .review-text-inner p {
+      font-size: {{ section.settings.textfontdesk }}px;
+    }
+  }
+
+  @media(max-width: 768px){
+    .logo-review-{{ section.id }} .logo-review-bg{
+      padding-top: {{section.settings.PaddingTopMob}}px;
+      padding-bottom: {{section.settings.PaddingBottomMob}}px;
+    }
+    .logo-review-{{ section.id }} .logo-btn-text{
+      font-size: {{section.settings.BtnFontMob}}px;
+    }
+    .review-text-inner p {
+      font-size: {{ section.settings.textfontmob }}px;
+    }
+  }
+
+  .logo-btn-text{
+    background: {{section.settings.btnbgcolor}};
+    color: {{section.settings.btnfontcolor}};
+    border: 2px solid {{section.settings.btnfontcolor}};
+  }
+{% endstyle %}
+
+{% schema %}
+{
+  "name": "Logo with review",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Padding section"
+    },
+    {
+      "type": "range",
+      "id": "PaddingTopDesk",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "padding top(desktop)",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "PaddingBottomDesk",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "padding bottom(desktop)",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "PaddingTopMob",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "padding top(mobile)",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "PaddingBottomMob",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "padding bottom(mobile)",
+      "default": 16
+    },
+    {
+      "type": "color",
+      "id": "Bgcolor",
+      "label": "Background color"
+    },
+    {
+      "type": "header",
+      "content": "Button section"
+    },
+    {
+      "type": "text",
+      "id": "btnname",
+      "label": "Button name"
+    },
+    {
+      "type": "url",
+      "id": "btnurl",
+      "label": "Button URL"
+    },
+    {
+      "type": "color",
+      "id": "btnbgcolor",
+      "label": "Button Background color"
+    },
+    {
+      "type": "color",
+      "id": "btnfontcolor",
+      "label": "Button font color"
+    },
+    {
+      "type": "range",
+      "id": "BtnFontDesk",
+      "min": 10,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Button font size(desktop)",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "BtnFontMob",
+      "min": 10,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Button font size(mobile)",
+      "default": 16
+    },
+    {
+      "type": "header",
+      "content": "review text & star"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Review star image"
+    },
+    {
+      "type": "number",
+      "id": "count",
+      "label": "star image count"
+    },
+    {
+      "type": "text",
+      "id": "text",
+      "label": "Review text"
+    },
+    {
+      "type": "range",
+      "id": "textfontdesk",
+      "min": 10,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "text font size(desktop)",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "textfontmob",
+      "min": 10,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "text font size(mobile)",
+      "default": 16
+    }
+  ],
+  "blocks": [
+    {
+      "type": "slide",
+      "name": "logo",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Logo image"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Logo with review"
+    }
+  ]
+}
+{% endschema %}

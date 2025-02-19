@@ -1,0 +1,132 @@
+.review-text-inner p {
+    margin: 0;
+    color: #000;
+    line-height: 1.2;
+}
+
+.logo-btn-text {
+    text-decoration: none;
+    padding: 14px;
+    display: block;
+    width: max-content;
+    line-height: 1.2;
+    border-radius: 8px;
+    font-weight: 500;
+    letter-spacing: 0;
+}
+
+.star--image-main img {
+    width: 100%;
+    max-width: 19px;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.star--image-main {
+    display: flex;
+    align-items: center;
+}
+
+.review_count_text {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 8px;
+    margin-top: 12px;
+}
+
+.review--logo-image img {
+    max-width: 85px;
+    height: 100%;
+    display: block;
+    width: max-content;
+    object-fit: cover;
+    padding: 0;
+}
+
+.logo-review-flex-items {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.reveiw-image-logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: end;
+    flex: 0 0 73%;
+    max-width: 73%;
+}
+
+.review--logo-image {
+    min-width: 120px;
+    min-height: 45px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+}
+
+.logo-review-on-review {
+    flex: 0 0 27%;
+    max-width: 27%;
+    position: relative;
+    border-right: 1px solid #1b1f231a;
+}
+
+@media (max-width: 1440px) {
+    .reveiw-image-logo {
+        justify-content: flex-start;
+        flex: 0 0 73%;
+        max-width: calc(73% - 50px);
+        padding-left: 50px;
+    }
+}
+
+@media (max-width: 991px) {
+
+    .logo-review-on-review,
+    .reveiw-image-logo {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .logo-review-flex-items {
+        gap: 21px;
+    }
+
+    .reveiw-image-logo {
+        padding-left: 0;
+    }
+
+    .logo-review-on-review {
+        border-right: none;
+    }
+
+    .review_count_text,
+    .reveiw-image-logo {
+        justify-content: center;
+    }
+
+    .logo-btn-text {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .logo-btn-text {
+        padding: 11px;
+    }
+
+    .star--image-main img {
+        max-width: 16px;
+    }
+
+    .review-text-inner p {
+        line-height: 1;
+    }
+}

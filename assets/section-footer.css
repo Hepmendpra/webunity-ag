@@ -680,8 +680,8 @@
   }
 }
 @media screen and (max-width: 989px) {
-  .footer .footer__blocks-wrapper .footer-block.grid__item 
-  .footer .footer__blocks-wrapper .footer-block.grid__item:first-child,
+  .footer .footer__blocks-wrapper .footer-block.grid__item, 
+  .footer .footer__blocks-wrapper .footer-block.grid__item:first-child, 
   .footer .footer__blocks-wrapper .footer-block.grid__item:last-child {
     width: calc(50% - 10px);
   }
