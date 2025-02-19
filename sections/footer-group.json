@@ -80,9 +80,11 @@
         "payment_enable": false,
         "show_policy": false,
         "margin_top": 0,
-        "small1": "",
-        "small2": "",
-        "small3": "",
+        "small1": "Made with",
+        "image1": "shopify://shop_images/Vector_9.svg",
+        "small2": "and",
+        "image2": "shopify://shop_images/Vector_9.svg",
+        "small3": "by Arctic Grey",
         "padding_top": 80,
         "padding_bottom": 36
       }
