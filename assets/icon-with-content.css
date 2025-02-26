@@ -1,0 +1,23 @@
+.icon-with-content-header {
+    text-align: center;
+}
+.icon-with-content-header h2.heading+.short-note {
+    margin-top: 20px;
+    line-height: 1.2;
+}
+.icon-with-content-header .short-note p {
+    margin: 0;
+}
+.icon-with-content-header h2.heading {
+    margin: 0;
+    line-height: 1.2;
+    font-weight: 500;
+}
+.icon-with-content-header span.sub-heading+h2.heading {
+    margin-top: 8px;
+}
+.icon-with-content-header span.sub-heading {
+    display: block;
+    line-height: 1.2;
+    letter-spacing: 0;
+}
