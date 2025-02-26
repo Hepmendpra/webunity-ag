@@ -363,25 +363,29 @@
         "block_TTWzFM": {
           "type": "block",
           "settings": {
-            "title": ""
+            "image": "shopify://shop_images/Group_38770.svg",
+            "title": "<p><strong>We Make It Easy</strong><br/>Personalized Solutions & Guidance Mean You Get Just What You Need Nothing More</p>"
           }
         },
         "block_edYdxP": {
           "type": "block",
           "settings": {
-            "title": ""
+            "image": "shopify://shop_images/Group_38770_1.svg",
+            "title": "<p><strong>Clean & Effective</strong><br/>Proven Ingredients, not Artificial, Crafted By Experts For Optimal Effectiveness</p>"
           }
         },
         "block_7UGGQE": {
           "type": "block",
           "settings": {
-            "title": ""
+            "image": "shopify://shop_images/Group_38770_2.svg",
+            "title": "<p><strong>Your Free Dietitian</strong><br/>Every Gainful Subscriber Gets Free, 1:1 Access Their Own Registered Dietitian.</p>"
           }
         },
         "block_ELdkY7": {
           "type": "block",
           "settings": {
-            "title": ""
+            "image": "shopify://shop_images/Group_38770_3.svg",
+            "title": "<p><strong>Made For You</strong><br/>Performance is Personal. Personalized & Customizable Products For Your Needs, Body & Goals</p>"
           }
         }
       },
@@ -397,7 +401,7 @@
         "sub_heading_color": "#1b1f23",
         "sub_heading_size_desktop": 16,
         "sub_heading_size_mobile": 14,
-        "heading": "Clean Supplements - <br>Made For You",
+        "heading": "Clean Supplements - Made For You",
         "heading_color": "#1b1f23",
         "heading_size_desktop": 40,
         "heading_size_mobile": 22,
