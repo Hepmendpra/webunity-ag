@@ -414,6 +414,28 @@
         "padding_top_mobile": 40,
         "padding_bottom_mobile": 30
       }
+    },
+    "video_with_product_4rTUqw": {
+      "type": "video-with-product",
+      "settings": {
+        "background_color": "#fff",
+        "sub_heading": "Trusted & Proven by Science",
+        "sub_heading_color": "#000",
+        "sub_heading_size_desktop": 16,
+        "sub_heading_size_mobile": 14,
+        "heading": "Real People. Real Results.",
+        "heading_color": "#1b1f23",
+        "heading_size_desktop": 40,
+        "heading_size_mobile": 22,
+        "short_note": "<p><a href=\"/collections/all\" title=\"All products\">View All</a></p>",
+        "short_note_color": "#000",
+        "short_note_desktop": 16,
+        "short_note_mobile": 14,
+        "padding_top_desktop": 80,
+        "padding_bottom_desktop": 80,
+        "padding_top_mobile": 40,
+        "padding_bottom_mobile": 30
+      }
     }
   },
   "order": [
@@ -422,6 +444,7 @@
     "logo_with_review_fyCcHC",
     "heading_with_block_wF4WtK",
     "featured_collection_slider_Th4NAe",
-    "icon_with_content_kYYABm"
+    "icon_with_content_kYYABm",
+    "video_with_product_4rTUqw"
   ]
 }
