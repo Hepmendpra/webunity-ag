@@ -27,4 +27,31 @@
 div.icon-with-content-list {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+}
+.icon-with-content-item {
+    width: 100%;
+}
+.icon-with-content-item .icon-wrap img {
+    width: 50px;
+    height: 50px;
+    display: block;
+}
+.icon-with-content-item .text-wrap {
+    margin-top: 2.4rem;
+}
+.icon-with-content-item .text-wrap p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.2;
+    color: #1B1F23CC;
+    margin-bottom: 16px;
+}
+.icon-with-content-item .text-wrap p:last-child {
+    margin-bottom: 0;    
+}
+.icon-with-content-item .text-wrap p strong {
+    font-size: 18px;
+    line-height: 1.2;
+    color: #1B1F23;
 }
