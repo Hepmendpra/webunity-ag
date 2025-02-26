@@ -24,6 +24,7 @@
     grid-template-columns: 1fr auto 1fr;
     column-gap: 4rem;
     align-items: center;
+    padding: 0 20px;
 }
 .video-with-product-header .swiper-button-prev, 
 .video-with-product-header .swiper-button-next {

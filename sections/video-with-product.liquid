@@ -1,6 +1,6 @@
 {{ 'video-with-product.css' | asset_url | stylesheet_tag }}
 <div class="video-with-product video-with-product-{{section.id}}">
-    <div class="page-width">
+    <div class="">
 
         {%- if section.settings.sub_heading != blank or section.settings.heading != blank or section.settings.short_note != blank -%}   
         <div class="video-with-product-header">
@@ -31,7 +31,11 @@
         {%- if section.blocks.size != 0 -%}
         <div class="video-with-product-body">
             <div class="video-with-product-slider swiper">
-                
+                {% for block in section.blocks %}  
+                    <div class="video-with-product-item">
+
+                    </div>
+                {% endfor %}
             </div>
         </div>
         {%- endif -%} 
@@ -77,25 +81,11 @@
 
 <script>
  var swiper = new Swiper(".video-with-product-{{section.id}} .video-with-product-slider", {
-    slidesPerView: 1.5,
-    spaceBetween: 14,
+    slidesPerView: "auto",
+    spaceBetween: 10,
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
-    },
-    breakpoints: {
-        500: {
-          slidesPerView: 2,
-          spaceBetween: 20,
-        },
-        768: {
-          slidesPerView: 2,
-          spaceBetween: 20,
-        },
-        1200: {
-          slidesPerView: 4,
-          spaceBetween: 30,
-        },
     },
 });   
 </script>
