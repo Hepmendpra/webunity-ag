@@ -264,6 +264,7 @@
         "block_CxM6xh": {
           "type": "block",
           "settings": {
+            "image": "shopify://shop_images/Image_01.png",
             "title": "Sleep",
             "richtext": "<p>Optimize your sleep patterns. </p>"
           }
@@ -271,6 +272,7 @@
         "block_JXnRFH": {
           "type": "block",
           "settings": {
+            "image": "shopify://shop_images/Image_01_1.png",
             "title": "Cognitive Function",
             "richtext": "<p>Enhance your brain's performance and connectivity</p>"
           }
@@ -278,6 +280,7 @@
         "block_wrGa9p": {
           "type": "block",
           "settings": {
+            "image": "shopify://shop_images/Image_01_2.png",
             "title": "Foundational Health",
             "richtext": "<p>Promoting healthy, natural deep sleep day to day</p>"
           }
@@ -285,6 +288,7 @@
         "block_EKypdw": {
           "type": "block",
           "settings": {
+            "image": "shopify://shop_images/Image_01_3.png",
             "title": "Athletic Performance",
             "richtext": "<p>Increase your healthy tissue, muscle, and energy</p>"
           }
@@ -292,6 +296,7 @@
         "block_cqpXQz": {
           "type": "block",
           "settings": {
+            "image": "shopify://shop_images/Image_01_4.png",
             "title": "Hormone Support",
             "richtext": "<p>Boost your mood, libido, and vitality</p>"
           }
