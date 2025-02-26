@@ -169,8 +169,8 @@
         "text_YXQEbV"
       ],
       "settings": {
-        "BgColor": "#000",
-        "Color": "#fff",
+        "BgColor": "#000000",
+        "Color": "#ffffff",
         "scrolling_speed": 16,
         "transition": "right-left",
         "FontSizeDesk": 14,
@@ -257,11 +257,40 @@
         "textfontdesk": 16,
         "textfontmob": 14
       }
+    },
+    "blog_with_heading_bmrekX": {
+      "type": "blog-with-heading",
+      "settings": {
+        "subheading": "",
+        "subheadingfontsize": 16,
+        "subheadingcolor": "#000000",
+        "title": "",
+        "headingfontsize": 40,
+        "headingfontsizemobile": 28,
+        "headingcolor": "#1B1F23",
+        "desc": "",
+        "descfontsize": 16,
+        "desccolor": "#1B1F23B2",
+        "alignment": "center",
+        "blog": "",
+        "post_limit": 3,
+        "columns_desktop": 3,
+        "show_image": true,
+        "show_date": true,
+        "linkbtn": true,
+        "show_author": false,
+        "show_view_all": true,
+        "padding-top": 80,
+        "padding-bottom": 60,
+        "padding-top-mobile": 50,
+        "padding-bottom-mobile": 30
+      }
     }
   },
   "order": [
     "video_overlay_text_gARVYf",
     "scrolling_text_qLfJTb",
-    "logo_with_review_fyCcHC"
+    "logo_with_review_fyCcHC",
+    "blog_with_heading_bmrekX"
   ]
 }
