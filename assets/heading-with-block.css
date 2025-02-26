@@ -1,0 +1,24 @@
+.heading-with-block-heading {
+    text-align: center;
+}
+.heading-with-block-heading span.sub-heading {
+    display: block;
+    line-height: 1.2;
+    letter-spacing: 0;
+}
+.heading-with-block-heading h2.heading {
+    margin: 0;
+    line-height: 1.2;
+    font-weight: 500;
+}
+.heading-with-block-heading span.sub-heading+h2.heading {
+    margin-top: 8px;
+}
+.heading-with-block-heading .short-note {
+    max-width: 350px;
+    margin: 0 auto;
+}
+.heading-with-block-heading h2.heading+.short-note {
+    margin-top: 16px;
+    line-height: 1.2;
+}
