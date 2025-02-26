@@ -21,3 +21,6 @@
     line-height: 1.2;
     letter-spacing: 0;
 }
+.featured-collection-list ul.contains-card {
+    margin-top: 50px;
+}
