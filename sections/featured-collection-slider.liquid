@@ -30,15 +30,23 @@
 
         {%- if section.settings.sub_heading != blank or section.settings.heading != blank or section.settings.short_note != blank -%}   
         <div class="featured-collection-slider-header">
-            {%- if section.settings.sub_heading != blank -%}
-            <span class="sub-heading">{{ section.settings.sub_heading }}</span>
-            {%- endif %}
-            {%- if section.settings.heading != blank -%}
-            <h2 class="heading">{{ section.settings.heading }}</h2>
-            {%- endif %}
-            {%- if section.settings.short_note != blank -%}
-            <div class="short-note">{{ section.settings.short_note }}</div>
-            {%- endif %}
+            <div class="swiper-button-prev">
+                {{- 'prev-arrow-icon.svg' | inline_asset_content -}}
+            </div>
+            <div class="featured-collection-info">
+                {%- if section.settings.sub_heading != blank -%}
+                <span class="sub-heading">{{ section.settings.sub_heading }}</span>
+                {%- endif %}
+                {%- if section.settings.heading != blank -%}
+                <h2 class="heading">{{ section.settings.heading }}</h2>
+                {%- endif %}
+                {%- if section.settings.short_note != blank -%}
+                <div class="short-note">{{ section.settings.short_note }}</div>
+                {%- endif %}
+            </div>
+            <div class="swiper-button-next">
+                {{- 'next-arrow-icon.svg' | inline_asset_content -}}
+            </div>
         </div>
         {%- endif -%}   
 
@@ -145,6 +153,17 @@
     } 
 }  
 </style>
+
+<script>
+ var swiper = new Swiper(".featured-collection-slider-{{section.id}} .featured-collection-list", {
+    slidesPerView: 4,
+    spaceBetween: 20,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+});   
+</script>
 {% schema %}
     {
       "name": "featured coll slider",
