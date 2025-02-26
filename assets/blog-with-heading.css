@@ -25,6 +25,7 @@
 }
 .image-with-link .grid--5-col-desktop.blog__posts.articles-wrapper {
   gap: 20px;
+  margin-top: 0;
 }
 .image-with-link .card__information {
   display: flex;
