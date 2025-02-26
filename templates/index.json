@@ -264,29 +264,36 @@
         "block_CxM6xh": {
           "type": "block",
           "settings": {
-            "title": "Title",
-            "richtext": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>"
+            "title": "Sleep",
+            "richtext": "<p>Optimize your sleep patterns. </p>"
           }
         },
         "block_JXnRFH": {
           "type": "block",
           "settings": {
-            "title": "Title",
-            "richtext": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>"
+            "title": "Cognitive Function",
+            "richtext": "<p>Enhance your brain's performance and connectivity</p>"
           }
         },
         "block_wrGa9p": {
           "type": "block",
           "settings": {
-            "title": "Title",
-            "richtext": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>"
+            "title": "Foundational Health",
+            "richtext": "<p>Promoting healthy, natural deep sleep day to day</p>"
           }
         },
         "block_EKypdw": {
           "type": "block",
           "settings": {
-            "title": "Title",
-            "richtext": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>"
+            "title": "Athletic Performance",
+            "richtext": "<p>Increase your healthy tissue, muscle, and energy</p>"
+          }
+        },
+        "block_cqpXQz": {
+          "type": "block",
+          "settings": {
+            "title": "Hormone Support",
+            "richtext": "<p>Boost your mood, libido, and vitality</p>"
           }
         }
       },
@@ -294,19 +301,20 @@
         "block_CxM6xh",
         "block_JXnRFH",
         "block_wrGa9p",
-        "block_EKypdw"
+        "block_EKypdw",
+        "block_cqpXQz"
       ],
       "settings": {
         "sub_heading": "COMFORTABLY UNCOMFORTABLE",
-        "sub_heading_color": "#000",
+        "sub_heading_color": "#000000",
         "sub_heading_size_desktop": 16,
         "sub_heading_size_mobile": 14,
         "heading": "Start with your Goals",
-        "heading_color": "#000",
+        "heading_color": "#000000",
         "heading_size_desktop": 40,
         "heading_size_mobile": 22,
         "short_note": "We cannot become what we want to be by remaining what we are.",
-        "short_note_color": "#000",
+        "short_note_color": "#000000",
         "short_note_desktop": 14,
         "short_note_mobile": 14,
         "padding_top_desktop": 80,
