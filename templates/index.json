@@ -260,6 +260,42 @@
     },
     "heading_with_block_wF4WtK": {
       "type": "heading-with-block",
+      "blocks": {
+        "block_CxM6xh": {
+          "type": "block",
+          "settings": {
+            "title": "Title",
+            "richtext": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>"
+          }
+        },
+        "block_JXnRFH": {
+          "type": "block",
+          "settings": {
+            "title": "Title",
+            "richtext": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>"
+          }
+        },
+        "block_wrGa9p": {
+          "type": "block",
+          "settings": {
+            "title": "Title",
+            "richtext": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>"
+          }
+        },
+        "block_EKypdw": {
+          "type": "block",
+          "settings": {
+            "title": "Title",
+            "richtext": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "block_CxM6xh",
+        "block_JXnRFH",
+        "block_wrGa9p",
+        "block_EKypdw"
+      ],
       "settings": {
         "sub_heading": "COMFORTABLY UNCOMFORTABLE",
         "sub_heading_color": "#000",
