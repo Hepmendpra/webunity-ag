@@ -1,5 +1,4 @@
 
-
 <div class="heading-with-block heading-with-block-{{section.id}}">
     <div class="page-width">
 
@@ -21,7 +20,18 @@
             <div class="heading-with-block-list">
                 {%- for block in section.blocks -%}
                     <div class="heading-with-block-item">
-
+                        <div class="block-item-media">
+                            {{ placeholder_image | placeholder_svg_tag: 'blog-placeholder-svg' }}
+                        </div>
+                        <div class="block-item-info">
+                            <div class="block-item-text">
+                                <h4 class="title">{{block.settings.title}}</h4>
+                                {{block.settings.richtext}}
+                            </div>
+                            <div class="block-item-icon">
+                                {{- 'cross-arrow-icon.svg' | inline_asset_content -}}
+                            </div>
+                        </div>
                     </div> 
                 {%- endfor -%}
             </div>
@@ -224,7 +234,18 @@
         "type": "block",
         "name": "block",
         "settings": [
-          
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Title",
+            "default": "Title"
+          },
+          {
+            "type": "richtext",
+            "id": "richtext",
+            "label": "Text",
+            "default": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>"
+          }
         ]
       }
     ],
