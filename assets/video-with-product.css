@@ -1,0 +1,91 @@
+.video-with-product-header h2.heading+.short-note {
+    margin-top: 20px;
+    line-height: 1.2;
+}
+.video-with-product-header .short-note p {
+    margin: 0;
+}
+.video-with-product-header h2.heading {
+    margin: 0;
+    line-height: 1.2;
+    font-weight: 500;
+}
+.video-with-product-header span.sub-heading+h2.heading {
+    margin-top: 8px;
+}
+.video-with-product-header span.sub-heading {
+    display: block;
+    line-height: 1.2;
+    letter-spacing: 0;
+}
+.video-with-product-header {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    column-gap: 4rem;
+    align-items: center;
+    padding: 0 20px;
+}
+.video-with-product-header .swiper-button-prev, 
+.video-with-product-header .swiper-button-next {
+    position: unset;
+    margin: 0;
+    width: 4rem;
+    height: 4rem;
+    border: 1px solid #1B1F231A;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.video-with-product-header .swiper-button-prev {
+    margin-left: auto;
+}
+.video-with-product-header .swiper-button-prev:after, 
+.video-with-product-header .swiper-button-next:after {
+    content:none;
+}
+
+.video-with-product-header .swiper-button-prev svg, 
+.video-with-product-header .swiper-button-next svg {
+    width: 15px;
+    height: 13px;
+    display: block;
+}
+@media(max-width:989px){
+    .video-with-product-header {
+        row-gap: 3rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        column-gap: 1.5rem;
+    }
+    .video-with-product-header .button-prev-wrap {
+        order: 2;
+        width: fit-content;
+    }
+    .video-with-product-info{
+        order: -1;
+        width: 100%;
+    }
+    .button-next-wrap {
+        order: 3;
+        width: fit-content;
+    }
+}
+
+@media(max-width:749px){
+    .video-with-product-header {
+        row-gap: 2rem;
+        column-gap: 1rem;
+    }
+    .video-with-product-header .swiper-button-prev, 
+    .video-with-product-header .swiper-button-next {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+    .video-with-product-header h2.heading+.short-note {
+        margin-top: 10px;
+        line-height: 1.2;
+    }
+}

@@ -27,6 +27,8 @@
 -%}
 <div class="blog gradient{% if section.settings.heading == blank %} no-heading{% endif %} image-with-link image-with-link--{{ section.id }}">
   <div class="page-width-desktop isolate{% if posts_displayed < 3 %} page-width-tablet{% endif %} section-{{ section.id }}-padding">
+
+    {% if section.settings.subheading != blank or section.settings.title != blank or section.settings.desc != blank %}
     <div class="image-with-link-heading">
       {% if section.settings.subheading != blank %}
         <p class="sub-heading">{{ section.settings.subheading }}</p>
@@ -38,6 +40,7 @@
         <div class="description">{{ section.settings.desc }}</div>
       {% endif %}
     </div>
+    {% endif %}
 
     <slider-component class="slider-mobile-gutter{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
       <ul

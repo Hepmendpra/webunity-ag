@@ -169,8 +169,8 @@
         "text_YXQEbV"
       ],
       "settings": {
-        "BgColor": "#000",
-        "Color": "#fff",
+        "BgColor": "#000000",
+        "Color": "#ffffff",
         "scrolling_speed": 16,
         "transition": "right-left",
         "FontSizeDesk": 14,
@@ -257,11 +257,194 @@
         "textfontdesk": 16,
         "textfontmob": 14
       }
+    },
+    "heading_with_block_wF4WtK": {
+      "type": "heading-with-block",
+      "blocks": {
+        "block_CxM6xh": {
+          "type": "block",
+          "settings": {
+            "image": "shopify://shop_images/Image_01.png",
+            "title": "Sleep",
+            "richtext": "<p>Optimize your sleep patterns. </p>"
+          }
+        },
+        "block_JXnRFH": {
+          "type": "block",
+          "settings": {
+            "image": "shopify://shop_images/Image_01_1.png",
+            "title": "Cognitive Function",
+            "richtext": "<p>Enhance your brain's performance and connectivity</p>"
+          }
+        },
+        "block_wrGa9p": {
+          "type": "block",
+          "settings": {
+            "image": "shopify://shop_images/Image_01_2.png",
+            "title": "Foundational Health",
+            "richtext": "<p>Promoting healthy, natural deep sleep day to day</p>"
+          }
+        },
+        "block_EKypdw": {
+          "type": "block",
+          "settings": {
+            "image": "shopify://shop_images/Image_01_3.png",
+            "title": "Athletic Performance",
+            "richtext": "<p>Increase your healthy tissue, muscle, and energy</p>"
+          }
+        },
+        "block_cqpXQz": {
+          "type": "block",
+          "settings": {
+            "image": "shopify://shop_images/Image_01_4.png",
+            "title": "Hormone Support",
+            "richtext": "<p>Boost your mood, libido, and vitality</p>"
+          }
+        }
+      },
+      "block_order": [
+        "block_CxM6xh",
+        "block_JXnRFH",
+        "block_wrGa9p",
+        "block_EKypdw",
+        "block_cqpXQz"
+      ],
+      "settings": {
+        "sub_heading": "COMFORTABLY UNCOMFORTABLE",
+        "sub_heading_color": "#000000",
+        "sub_heading_size_desktop": 16,
+        "sub_heading_size_mobile": 15,
+        "heading": "Start with your Goals",
+        "heading_color": "#000000",
+        "heading_size_desktop": 40,
+        "heading_size_mobile": 34,
+        "short_note": "We cannot become what we want to be by remaining what we are.",
+        "short_note_color": "#000000",
+        "short_note_desktop": 16,
+        "short_note_mobile": 14,
+        "padding_top_desktop": 80,
+        "padding_bottom_desktop": 80,
+        "padding_top_mobile": 50,
+        "padding_bottom_mobile": 30
+      }
+    },
+    "featured_collection_slider_Th4NAe": {
+      "type": "featured-collection-slider",
+      "settings": {
+        "background_color": "#f6f6f5",
+        "sub_heading": "🌟 Trending",
+        "sub_heading_color": "#000000",
+        "sub_heading_size_desktop": 16,
+        "sub_heading_size_mobile": 14,
+        "heading": "Supplements",
+        "heading_color": "#1b1f23",
+        "heading_size_desktop": 40,
+        "heading_size_mobile": 22,
+        "short_note": "<p><a href=\"/collections/all\" title=\"All products\">View All</a></p>",
+        "short_note_color": "#000000",
+        "short_note_desktop": 16,
+        "short_note_mobile": 14,
+        "collection": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": true,
+        "quick_add": "standard",
+        "padding_top_desktop": 80,
+        "padding_bottom_desktop": 80,
+        "padding_top_mobile": 50,
+        "padding_bottom_mobile": 30
+      }
+    },
+    "icon_with_content_kYYABm": {
+      "type": "icon-with-content",
+      "blocks": {
+        "block_TTWzFM": {
+          "type": "block",
+          "settings": {
+            "image": "shopify://shop_images/Group_38770.svg",
+            "title": "<p><strong>We Make It Easy</strong></p><p>Personalized Solutions & Guidance Mean You Get Just What You Need Nothing More</p>"
+          }
+        },
+        "block_edYdxP": {
+          "type": "block",
+          "settings": {
+            "image": "shopify://shop_images/Group_38770_1.svg",
+            "title": "<p><strong>Clean & Effective</strong></p><p>Proven Ingredients, not Artificial, Crafted By Experts For Optimal Effectiveness</p>"
+          }
+        },
+        "block_7UGGQE": {
+          "type": "block",
+          "settings": {
+            "image": "shopify://shop_images/Group_38770_2.svg",
+            "title": "<p><strong>Your Free Dietitian</strong></p><p>Every Gainful Subscriber Gets Free, 1:1 Access Their Own Registered Dietitian.</p>"
+          }
+        },
+        "block_ELdkY7": {
+          "type": "block",
+          "settings": {
+            "image": "shopify://shop_images/Group_38770_3.svg",
+            "title": "<p><strong>Made For You</strong></p><p>Performance is Personal. Personalized & Customizable Products For Your Needs, Body & Goals</p>"
+          }
+        }
+      },
+      "block_order": [
+        "block_TTWzFM",
+        "block_edYdxP",
+        "block_7UGGQE",
+        "block_ELdkY7"
+      ],
+      "settings": {
+        "background_color": "#fff",
+        "sub_heading": "🧐 Why Health & Fitness",
+        "sub_heading_color": "#1b1f23",
+        "sub_heading_size_desktop": 16,
+        "sub_heading_size_mobile": 14,
+        "heading": "Clean Supplements -<br> Made For You",
+        "heading_color": "#1b1f23",
+        "heading_size_desktop": 40,
+        "heading_size_mobile": 22,
+        "short_note": "",
+        "short_note_color": "#000",
+        "short_note_desktop": 14,
+        "short_note_mobile": 14,
+        "padding_top_desktop": 80,
+        "padding_bottom_desktop": 80,
+        "padding_top_mobile": 40,
+        "padding_bottom_mobile": 30
+      }
+    },
+    "video_with_product_4rTUqw": {
+      "type": "video-with-product",
+      "settings": {
+        "background_color": "#fff",
+        "sub_heading": "Trusted & Proven by Science",
+        "sub_heading_color": "#000",
+        "sub_heading_size_desktop": 16,
+        "sub_heading_size_mobile": 14,
+        "heading": "Real People. Real Results.",
+        "heading_color": "#1b1f23",
+        "heading_size_desktop": 40,
+        "heading_size_mobile": 22,
+        "short_note": "<p><a href=\"/collections/all\" title=\"All products\">View All</a></p>",
+        "short_note_color": "#000",
+        "short_note_desktop": 16,
+        "short_note_mobile": 14,
+        "padding_top_desktop": 80,
+        "padding_bottom_desktop": 80,
+        "padding_top_mobile": 40,
+        "padding_bottom_mobile": 30
+      }
     }
   },
   "order": [
     "video_overlay_text_gARVYf",
     "scrolling_text_qLfJTb",
-    "logo_with_review_fyCcHC"
+    "logo_with_review_fyCcHC",
+    "heading_with_block_wF4WtK",
+    "featured_collection_slider_Th4NAe",
+    "icon_with_content_kYYABm",
+    "video_with_product_4rTUqw"
   ]
 }
