@@ -98,3 +98,9 @@
         font-size: 15px;
     }
 }
+
+@media(max-width:749px){
+    .heading-with-block-list {
+        grid-template-columns: 1fr;
+    }
+}
