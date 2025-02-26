@@ -30,8 +30,10 @@
 
         {%- if section.settings.sub_heading != blank or section.settings.heading != blank or section.settings.short_note != blank -%}   
         <div class="featured-collection-slider-header">
-            <div class="swiper-button-prev">
-                {{- 'prev-arrow-icon.svg' | inline_asset_content -}}
+            <div class="button-prev-wrap">
+                <div class="swiper-button-prev">
+                    {{- 'prev-arrow-icon.svg' | inline_asset_content -}}
+                </div>
             </div>
             <div class="featured-collection-info">
                 {%- if section.settings.sub_heading != blank -%}
@@ -44,8 +46,10 @@
                 <div class="short-note">{{ section.settings.short_note }}</div>
                 {%- endif %}
             </div>
-            <div class="swiper-button-next">
-                {{- 'next-arrow-icon.svg' | inline_asset_content -}}
+            <div class="button-next-wrap">
+                <div class="swiper-button-next">
+                    {{- 'next-arrow-icon.svg' | inline_asset_content -}}
+                </div>
             </div>
         </div>
         {%- endif -%}   
