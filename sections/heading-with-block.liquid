@@ -16,12 +16,13 @@
         </div>
         {%- endif -%} 
 
+        {%- if section.blocks.size != 0 -%}
         <div class="heading-with-block-body">
             <div class="heading-with-block-list">
                 {%- for block in section.blocks -%}
                     <div class="heading-with-block-item">
                         <div class="block-item-media">
-                            {{ placeholder_image | placeholder_svg_tag: 'blog-placeholder-svg' }}
+                            {{ 'blog-apparel-1' | placeholder_svg_tag: 'blog-placeholder-svg' }}
                         </div>
                         <div class="block-item-info">
                             <div class="block-item-text">
@@ -36,7 +37,7 @@
                 {%- endfor -%}
             </div>
         </div>
-
+        {%- endif -%}  
     </div>
 </div>
 

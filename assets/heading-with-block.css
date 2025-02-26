@@ -22,3 +22,6 @@
     margin-top: 16px;
     line-height: 1.2;
 }
+.heading-with-block-heading+.heading-with-block-body {
+    margin-top: 40px;
+}
