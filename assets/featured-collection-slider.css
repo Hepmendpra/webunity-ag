@@ -1,0 +1,23 @@
+.featured-collection-slider-header {
+    text-align: center;
+}
+.featured-collection-slider-header h2.heading+.short-note {
+    margin-top: 20px;
+    line-height: 1.2;
+}
+.featured-collection-slider-header .short-note p {
+    margin: 0;
+}
+.featured-collection-slider-header h2.heading {
+    margin: 0;
+    line-height: 1.2;
+    font-weight: 500;
+}
+.featured-collection-slider-header span.sub-heading+h2.heading {
+    margin-top: 8px;
+}
+.featured-collection-slider-header span.sub-heading {
+    display: block;
+    line-height: 1.2;
+    letter-spacing: 0;
+}
