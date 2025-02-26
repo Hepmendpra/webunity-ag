@@ -1,0 +1,23 @@
+.video-with-product-header {
+    text-align: center;
+}
+.video-with-product-header h2.heading+.short-note {
+    margin-top: 20px;
+    line-height: 1.2;
+}
+.video-with-product-header .short-note p {
+    margin: 0;
+}
+.video-with-product-header h2.heading {
+    margin: 0;
+    line-height: 1.2;
+    font-weight: 500;
+}
+.video-with-product-header span.sub-heading+h2.heading {
+    margin-top: 8px;
+}
+.video-with-product-header span.sub-heading {
+    display: block;
+    line-height: 1.2;
+    letter-spacing: 0;
+}
