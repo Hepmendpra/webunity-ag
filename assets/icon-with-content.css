@@ -1,5 +1,5 @@
 .icon-with-content-header {
-    text-align: center;
+    text-align: left;
 }
 .icon-with-content-header h2.heading+.short-note {
     margin-top: 20px;
@@ -20,4 +20,11 @@
     display: block;
     line-height: 1.2;
     letter-spacing: 0;
+}
+.icon-with-content-header+.icon-with-content-body {
+    margin-top: 5rem;
+}
+div.icon-with-content-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 }
