@@ -320,8 +320,37 @@
         "heading_size_mobile": 34,
         "short_note": "We cannot become what we want to be by remaining what we are.",
         "short_note_color": "#000000",
-        "short_note_desktop": 14,
+        "short_note_desktop": 16,
         "short_note_mobile": 14,
+        "padding_top_desktop": 80,
+        "padding_bottom_desktop": 80,
+        "padding_top_mobile": 50,
+        "padding_bottom_mobile": 30
+      }
+    },
+    "featured_collection_slider_Th4NAe": {
+      "type": "featured-collection-slider",
+      "settings": {
+        "background_color": "#f6f6f5",
+        "sub_heading": "🌟 Trending",
+        "sub_heading_color": "#000",
+        "sub_heading_size_desktop": 16,
+        "sub_heading_size_mobile": 14,
+        "heading": "Supplements",
+        "heading_color": "#1b1f23",
+        "heading_size_desktop": 40,
+        "heading_size_mobile": 22,
+        "short_note": "<p><a href=\"/collections/all\" title=\"All products\">View All</a></p>",
+        "short_note_color": "#000",
+        "short_note_desktop": 16,
+        "short_note_mobile": 14,
+        "collection": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
         "padding_top_desktop": 80,
         "padding_bottom_desktop": 80,
         "padding_top_mobile": 50,
@@ -333,6 +362,7 @@
     "video_overlay_text_gARVYf",
     "scrolling_text_qLfJTb",
     "logo_with_review_fyCcHC",
-    "heading_with_block_wF4WtK"
+    "heading_with_block_wF4WtK",
+    "featured_collection_slider_Th4NAe"
   ]
 }
