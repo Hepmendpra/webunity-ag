@@ -22,7 +22,20 @@
                 {%- for block in section.blocks -%}
                     <div class="heading-with-block-item">
                         <div class="block-item-media">
-                            {{ 'blog-apparel-1' | placeholder_svg_tag: 'blog-placeholder-svg' }}
+                            {%- if block.settings.image != blank -%}
+                                {{ 'blog-apparel-1' | placeholder_svg_tag: 'blog-placeholder-svg' }}
+                            {%- else -%}
+                            {%- capture sizes -%}
+                                (min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 1.6667 }}px,
+                                (min-width: 750px) calc((100vw - 130px) / 1.667), calc((100vw - 50px) / 1.667)
+                            {%- endcapture -%}
+                            {%- assign widths = '165, 360, 535, 750' -%}
+                            {{
+                                block.settings.image
+                                | image_url: width: 750
+                                | image_tag: sizes: sizes, widths: widths, fetchpriority: "auto"
+                            }}
+                            {%- endif -%}
                         </div>
                         <div class="block-item-info">
                             <div class="block-item-text">
@@ -235,6 +248,11 @@
         "type": "block",
         "name": "block",
         "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          },
           {
             "type": "text",
             "id": "title",
