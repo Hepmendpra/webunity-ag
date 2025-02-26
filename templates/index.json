@@ -411,7 +411,7 @@
         "short_note_mobile": 14,
         "padding_top_desktop": 80,
         "padding_bottom_desktop": 80,
-        "padding_top_mobile": 50,
+        "padding_top_mobile": 40,
         "padding_bottom_mobile": 30
       }
     }
