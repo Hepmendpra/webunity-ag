@@ -30,3 +30,7 @@
 .coll-bundle-content.is--active {
     display: block;
 }
+.collection-bundle-slider li {
+    width: calc(25% - var(--grid-desktop-horizontal-spacing)* 3 / 4);
+    max-width: calc(25% - var(--grid-desktop-horizontal-spacing) / 2);
+}

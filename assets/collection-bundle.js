@@ -20,7 +20,17 @@ tab_list.forEach(function(em){
             em.classList.remove('is--active');
         });
 
-        document.querySelectorAll('.coll-bundle-content[data-id="'+data_id+'"]').classList.add('is--active');
+        document.querySelector('.coll-bundle-content[data-id="'+data_id+'"]').classList.add('is--active');
         
     });
 });
+
+
+var bundle_slider = document.querySelectorAll('.collection-bundle-slider');
+bundle_slider.forEach(function(slider){
+    var swiper = new Swiper(slider, {
+    slidesPerView: 4,
+    spaceBetween: 20,
+    });
+});
+
