@@ -556,6 +556,26 @@
         "padding-top-mobile": 40,
         "padding-bottom-mobile": 40
       }
+    },
+    "featured_blog_latest_C9wkCy": {
+      "type": "featured-blog-latest",
+      "settings": {
+        "subheading": "✍️ Blogs",
+        "subheadingfont_size": 16,
+        "subheadingcolor": "#1B1F23",
+        "heading": "Latest Articles",
+        "headingfont_size": 40,
+        "headingfont_size_mobile": 22,
+        "headingcolor": "#1B1F23",
+        "blog": "",
+        "show_image": true,
+        "show_date": true,
+        "show_author": true,
+        "tags": true,
+        "show_view_all": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -566,6 +586,7 @@
     "featured_collection_slider_Th4NAe",
     "icon_with_content_kYYABm",
     "video_with_product_4rTUqw",
-    "banner_image_2_LhaXm8"
+    "banner_image_2_LhaXm8",
+    "featured_blog_latest_C9wkCy"
   ]
 }
