@@ -160,6 +160,19 @@
       </div>
       <div class="card__content">
         <div class="card__information">
+
+           <div class="card_tags">
+            <ul>
+            {% for tag in card_product.tags %}
+              <li>
+              {% if tag contains "label_:" %}
+                {% else %}
+                {{tag}}
+              {% endif %}
+              </li>
+            {% endfor %}
+            </ul>
+           </div> 
           <h3
             class="card__heading{% if card_product.featured_media or settings.card_style == 'standard' %} h5{% endif %}"
             {% if card_product.featured_media or settings.card_style == 'card' %}
@@ -175,6 +188,11 @@
               {{ card_product.title | escape }}
             </a>
           </h3>
+          {% if card_product.metafields.custom.short_note != blank %}
+          <div class="card_short-note">
+             <span>{{card_product.metafields.custom.short_note.value | metafield_tag}}</span> 
+          </div>
+          {% endif %}
           <div class="card-information">
             {%- if show_vendor -%}
               <span class="visually-hidden">{{ 'accessibility.vendor' | t }}</span>

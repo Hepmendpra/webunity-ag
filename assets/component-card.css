@@ -265,8 +265,8 @@
 
 @media screen and (min-width: 750px) {
   .card__information {
-    padding-bottom: 1.7rem;
-    padding-top: 1.7rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
   }
 }
 
@@ -401,10 +401,6 @@
     transform: scale(1.03);
   }
 
-  .underline-links-hover:hover a {
-    text-decoration: underline;
-    text-underline-offset: 0.3rem;
-  }
 }
 
 .card--standard.card--media .card__inner .card__information,
@@ -609,4 +605,25 @@
 }
 .card-wrapper .card .card__inner {
   background: transparent;
+}
+.card-wrapper .card--media .card__inner .card__content {
+  top: -20px;
+  left: -20px;
+  width: calc(100% + 20px);
+  height: calc(100% + 20px);
+}
+.card-wrapper .card__badge .badge.Bestseller {
+  font-size: 12px;
+  line-height: 1;
+  background: #FFED92;
+  color: #1B1F23;
+  padding: 6px 10px;
+  letter-spacing: 0;
+  border-radius: 4px;
+}
+.card-wrapper .card__heading {
+  font-size: 16px;
+  line-height: 1.2;
+  color: #1B1F23;
+  letter-spacing: 0;
 }

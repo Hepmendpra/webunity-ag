@@ -36,7 +36,7 @@
 .cust-blog-main-content .card__content {
   width: fit-content;
 }
-.card__inner.color-scheme-2.gradient.ratio {
+.cust-blog-main-content .card__inner.color-scheme-2.gradient.ratio {
   border-radius: 8px;
   overflow: hidden;
 }
