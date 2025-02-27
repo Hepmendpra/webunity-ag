@@ -627,3 +627,41 @@
   color: #1B1F23;
   letter-spacing: 0;
 }
+.card-wrapper .card_tags {
+  margin-bottom: 16px;
+}
+.card-wrapper .card_tags ul li {
+  font-size: 11px;
+  line-height: 1.2;
+  background: #F6F6F5;
+  color: #000;
+  padding: 5px 10px 5px 20px;
+  letter-spacing: 0;
+  font-weight: 400;
+  position: relative;
+}
+.card-wrapper .card_tags ul li:after {
+  content: '';
+  position: absolute;
+  background: #101226;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.card-wrapper .card_short-note {
+  margin-top: 5px;
+}
+.card-wrapper .card_short-note p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.2;
+  color: #1B1F23B2;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+.card-wrapper .card-information>.price {
+  display: none;
+}
