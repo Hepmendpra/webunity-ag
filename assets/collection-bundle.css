@@ -68,3 +68,25 @@
     justify-content: center;
     align-items: center;
 }
+.collection-bundle-body .product-card-wrapper {
+    background: #F6F6F5;
+}
+.collection-bundle-header {
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto 1fr auto;
+    gap: 4rem;
+}
+.collection-bundle-header h2.heading {
+    margin: 0;
+    line-height: 1.2;
+    font-weight: 500;
+}
+.collection-bundle-header span.sub-heading+h2.heading {
+    margin-top: 8px;
+}
+.collection-bundle-header span.sub-heading {
+    display: block;
+    line-height: 1.2;
+    letter-spacing: 0;
+}
