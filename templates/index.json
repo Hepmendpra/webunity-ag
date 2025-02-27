@@ -485,7 +485,6 @@
         "block_CHj43H",
         "block_fMAdVt"
       ],
-      "disabled": true,
       "settings": {
         "background_color": "#f6f6f5",
         "sub_heading": "Trusted & Proven by Science",
@@ -562,6 +561,7 @@
         "slide_RJyHne",
         "slide_MjEKxR"
       ],
+      "disabled": true,
       "settings": {
         "background": "#F6F6F5",
         "subheading": "Simple & Effective Ingredients",
