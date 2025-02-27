@@ -528,6 +528,7 @@ cart-drawer-items {
 }
 .cart-drawer .drawer__cart-items-wrapper table {
   background: #F6F6F5;
+  padding: 15px;
 }
 .cart-drawer .cart-item {
   border-radius: 8px;
@@ -537,4 +538,11 @@ cart-drawer-items {
 }
 .cart-drawer .cart-item:last-child {
   margin-bottom: 0;
+}
+.cart-drawer .cart-item td.cart-item__media {
+  padding: 0;
+  width: 9rem;
+}
+.cart-drawer .cart-item>td+td {
+  padding-left: 0;
 }
