@@ -158,7 +158,7 @@
           </div>
         </div>
       </div>
-      <div class="card__content hiiii">
+      <div class="card__content">
         <div class="card__information">
 
            <div class="card_tags">
@@ -620,6 +620,65 @@
           {%- endif -%}
         </div>
       </div>
+
+      <div class="card_subscription-info">
+          <div class="card-product-form">
+            {% assign product_form_id = 'quick-add-' | append: section_id | append: card_product.id %}
+            <product-form data-section-id="{{ section.id }}">
+              {%- form 'product',
+                card_product,
+                id: product_form_id,
+                class: 'form',
+                novalidate: 'novalidate',
+                data-type: 'add-to-cart-form'
+              -%}
+                <input
+                  type="hidden"
+                  name="id"
+                  value="{{ card_product.selected_or_first_available_variant.id }}"
+                  class="product-variant-id"
+                  {% if card_product.selected_or_first_available_variant.available == false %}
+                    disabled
+                  {% endif %}
+                >
+                <button
+                  id="{{ product_form_id }}-submit"
+                  type="submit"
+                  name="add"
+                  class="quick-add__submit button button--full-width button--secondary{% if horizontal_quick_add %} card--horizontal__quick-add{% endif %}"
+                  aria-haspopup="dialog"
+                  aria-labelledby="{{ product_form_id }}-submit title-{{ section_id }}-{{ card_product.id }}"
+                  aria-live="polite"
+                  data-sold-out-message="true"
+                  {% if card_product.selected_or_first_available_variant.available == false %}
+                    disabled
+                  {% endif %}
+                >
+                  <span>
+                    {%- if card_product.selected_or_first_available_variant.available -%}
+                      Add to Cart - {{card_product.selected_or_first_available_variant.price | money }}
+                    {%- else -%}
+                      {{ 'products.product.sold_out' | t }}
+                    {%- endif -%}
+                  </span>
+                  <span class="sold-out-message hidden">
+                    {{ 'products.product.sold_out' | t }}
+                  </span>
+                  {%- if horizontal_quick_add -%}
+                    <span class="icon-wrap">
+                      {{- 'icon-plus.svg' | inline_asset_content -}}
+                    </span>
+                  {%- endif -%}
+                  {%- render 'loading-spinner' -%}
+                </button>
+              {%- endform -%}
+            </product-form>
+          </div>
+          <div class="cart-view-btn">
+              <a href="{{card_product.url}}">View Full Details</a>
+          </div>
+      </div>
+
     </div>
   </div>
 {%- else -%}
