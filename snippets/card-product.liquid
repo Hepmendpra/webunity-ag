@@ -190,7 +190,7 @@
           </h3>
           {% if card_product.metafields.custom.short_note != blank %}
           <div class="card_short-note">
-             <span>{{card_product.metafields.custom.short_note.value | metafield_tag}}</span> 
+             <span>{{card_product.metafields.custom.short_note | metafield_tag}}</span> 
           </div>
           {% endif %}
           <div class="card-information">
