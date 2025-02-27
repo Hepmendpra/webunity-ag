@@ -1,0 +1,32 @@
+.collection-bundle-header +.collection-bundle-body {
+    margin-top: 5rem;
+}
+.coll-bundle-tab ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.coll-bundle-tab ul a {
+    display: block;
+    font-size: 14px;
+    line-height: 1.2;
+    text-decoration: none;
+    color: #1B1F23;
+    font-weight: 400;
+    letter-spacing: 0;
+    padding: 5px 10px;
+}
+.collection-bundle-body ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.coll-bundle-content {
+    display: none;
+}
+.coll-bundle-content.is--active {
+    display: block;
+}
