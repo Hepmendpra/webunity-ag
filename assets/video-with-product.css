@@ -52,6 +52,27 @@
     height: 13px;
     display: block;
 }
+.video-with-product-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+.video-with-product-item {
+    width: calc(20% - 10px);
+    margin: 0 5px;
+}
+.video-with-product-item .video-wrapper {
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.video-with-product-item .video-wrapper video {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.video-with-product-header+.video-with-product-body {
+    margin-top: 5.5rem;
+}
 @media(max-width:989px){
     .video-with-product-header {
         row-gap: 3rem;
