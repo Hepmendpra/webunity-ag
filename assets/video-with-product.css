@@ -58,7 +58,7 @@
 }
 .video-with-product-item {
     width: calc(20% - 10px);
-    margin: 0 5px;
+    margin: 0 5px 15px;
 }
 .video-with-product-item .video-wrapper {
     width: 100%;
@@ -72,6 +72,13 @@
 }
 .video-with-product-header+.video-with-product-body {
     margin-top: 5.5rem;
+}
+.video-with-product-slider.swiper-initialized .video-with-product-wrapper {
+    flex-wrap: unset;
+}
+.video-with-product-slider.swiper-initialized .video-with-product-item {
+    width: 30rem;
+    margin: 0;
 }
 @media(max-width:989px){
     .video-with-product-header {
