@@ -168,6 +168,7 @@
         "text_TDnpKq",
         "text_YXQEbV"
       ],
+      "disabled": true,
       "settings": {
         "BgColor": "#000000",
         "Color": "#ffffff",
@@ -330,7 +331,6 @@
     },
     "featured_collection_slider_Th4NAe": {
       "type": "featured-collection-slider",
-      "disabled": true,
       "settings": {
         "background_color": "#f6f6f5",
         "sub_heading": "🌟 Trending",
