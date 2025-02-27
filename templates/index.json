@@ -569,7 +569,7 @@
             "caption1": "Whey Based",
             "caption2": "Build Muscle",
             "caption3": "Clean Ingredients",
-            "bgtop": "#1B1F23",
+            "bgtop": "#1b1f23",
             "bottomtitle": "Active Ingredients",
             "bottomcolumnicon": "shopify://shop_images/Group.svg",
             "bottomcolumnheading1": "Whey Protein Isolate",
@@ -580,8 +580,8 @@
             "bottomcolumndesc3": "Low Calorie With Virtually No Fat or Lactose, Quickly Absorbed To Maximize Muscle Building & Repair.",
             "button": "Customize This Blend",
             "btnurl": "/",
-            "btncolor": "#fff",
-            "btnbg": "#1B1F23"
+            "btncolor": "#ffffff",
+            "btnbg": "#1b1f23"
           }
         },
         "slide_MjEKxR": {
@@ -593,7 +593,7 @@
             "caption1": "Whey Based",
             "caption2": "Build Muscle",
             "caption3": "Clean Ingredients",
-            "bgtop": "#1B1F23",
+            "bgtop": "#1b1f23",
             "bottomtitle": "Active Ingredients",
             "bottomcolumnicon": "shopify://shop_images/Group.svg",
             "bottomcolumnheading1": "Whey Protein Isolate",
@@ -604,8 +604,8 @@
             "bottomcolumndesc3": "Low Calorie With Virtually No Fat or Lactose, Quickly Absorbed To Maximize Muscle Building & Repair.",
             "button": "Customize This Blend",
             "btnurl": "/",
-            "btncolor": "#fff",
-            "btnbg": "#1B1F23"
+            "btncolor": "#ffffff",
+            "btnbg": "#1b1f23"
           }
         }
       },
@@ -619,7 +619,7 @@
         "subheadingtext": "#000000",
         "subheadingfontsize": 16,
         "title": "<h2>Customized Protein Powder</h2>",
-        "headingtext": "#1B1F23",
+        "headingtext": "#1b1f23",
         "headingfontsize": 40,
         "headingfontsizemobile": 22,
         "alignment": "center",
@@ -639,7 +639,7 @@
         "headingfont_size": 40,
         "headingfont_size_mobile": 22,
         "headingcolor": "#1b1f23",
-        "blog": "",
+        "blog": "news",
         "show_image": true,
         "show_date": true,
         "show_author": true,
