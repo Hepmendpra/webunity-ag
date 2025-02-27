@@ -39,7 +39,7 @@
                 aria-label="{{ 'accessibility.close' | t }}"
               >
                 <span class="svg-wrapper">
-                  {{- 'icon-close.svg' | inline_asset_content -}}
+                  {{- 'cart-close-icon.svg' | inline_asset_content -}}
                 </span>
               </button>
               <a href="{{ routes.all_products_collection_url }}" class="button">
@@ -62,7 +62,7 @@
         </div>
       {%- endif -%}
       <div class="drawer__header">
-        <h2 class="drawer__heading">{{ 'sections.cart.title' | t }}</h2>
+        <h2 class="drawer__heading">{{ 'sections.cart.title' | t }} <span class="item-count">{{cart.item_count}}</span></h2>
         <button
           class="drawer__close"
           type="button"
@@ -70,9 +70,29 @@
           aria-label="{{ 'accessibility.close' | t }}"
         >
           <span class="svg-wrapper">
-            {{- 'icon-close.svg' | inline_asset_content -}}
+            {{- 'cart-close-icon.svg' | inline_asset_content -}}
           </span>
         </button>
+      </div>
+      <div class="drawer-progess-bar">
+        {% if cart.total_price < 10000 %}
+         <p class="remaing-range">You are <span>{{ 10000 |  minus: cart.total_price | money }}</span> away from eligible for free shipping</p>
+         {% else %}
+         <p class="fill-range">🌟You are eligible for free shipping 📦</p>
+        {% endif %}
+         <div class="shipping-progress-bar">
+          <span>{{0 |  money}}</span>
+            <div class="progress-bar">
+              {% assign per_width = 10000 |  minus: cart.total_price |  times: 100 |  divided_by: 10000 %}
+              {% assign final_result = 100 |  minus: per_width %}
+              {% if cart.total_price < 10000 %}
+              <div class="progress_inner" style="width:{{final_result}}%;"></div>
+              {% else %}
+              <div class="progress_inner" style="width:100%;"></div> 
+              {% endif %}
+            </div>
+          <span>{{10000 |  money}}</span>
+         </div>
       </div>
       <cart-drawer-items
         {% if cart == empty %}
@@ -89,6 +109,7 @@
             {%- if cart != empty -%}
               <div class="drawer__cart-items-wrapper">
                 <table class="cart-items" role="table">
+                  {% comment %}
                   <thead role="rowgroup">
                     <tr role="row">
                       <th id="CartDrawer-ColumnProductImage" role="columnheader">
@@ -115,7 +136,7 @@
                       </th>
                     </tr>
                   </thead>
-
+                  {% endcomment %}     
                   <tbody role="rowgroup">
                     {%- for item in cart.items -%}
                       <tr id="CartDrawer-Item-{{ item.index | plus: 1 }}" class="cart-item" role="row">
@@ -143,6 +164,7 @@
                             {{- item.product.title | escape -}}
                           </a>
 
+                          {%comment%}
                           {%- if item.original_price != item.final_price -%}
                             <div class="cart-item__discounted-prices">
                               <span class="visually-hidden">
@@ -163,6 +185,8 @@
                               {{ item.original_price | money }}
                             </div>
                           {%- endif -%}
+                          {%endcomment%}
+
 
                           {%- if item.product.has_only_default_variant == false
                             or item.properties.size != 0
@@ -454,6 +478,33 @@
           <div id="CartDrawer-CartErrors" role="alert"></div>
         </form>
       </cart-drawer-items>
+
+      {% if settings.show_product_recommendations %}
+        {% if cart != empty %}
+          <div class="mini-cart-recommendation">
+            <div class="mini-cart-recommendation-head">
+              <h2 class="recommendation-inner-text">{{ settings.title }}</h2>
+              <div class="recommendation-inner-btn">
+                <div class="swiper-button-prev swiper-button-prev--{{ section.id }}">
+                  {{- 'prev-arrow-icon.svg' | inline_asset_content -}}
+                </div>
+                <div class="swiper-button-next swiper-button-next--{{ section.id }}">
+                  {{- 'next-arrow-icon.svg' | inline_asset_content -}}
+                </div>
+              </div>
+            </div>
+            <div
+              class="recommended-product"
+              data-id="/recommendations/products.json?product_id={{ cart.items[0].product_id }}"
+            >
+              <div class="recommended-product-main swiper">
+                <div class="swiper-wrapper"></div>
+              </div>
+            </div>
+          </div>
+        {% endif %}
+      {% endif %}
+
       <div class="drawer__footer">
         {%- if settings.show_cart_note -%}
           <details id="Details-CartDrawer">
@@ -495,7 +546,7 @@
 
           <div class="totals" role="status">
             <h2 class="totals__total">{{ 'sections.cart.estimated_total' | t }}</h2>
-            <p class="totals__total-value">{{ cart.total_price | money_with_currency }}</p>
+            <p class="totals__total-value">{{ cart.total_price | money }}</p>
           </div>
 
           <small class="tax-note caption-large rte">

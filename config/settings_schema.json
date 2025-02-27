@@ -1214,6 +1214,21 @@
         "unit": "px",
         "label": "t:settings_schema.global.settings.blur.label",
         "default": 0
+      },
+      {
+        "type": "header",
+        "content": "recommendation product"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_product_recommendations",
+        "label": "show product recommendations",
+        "default":true
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "heading"
       }
     ]
   },

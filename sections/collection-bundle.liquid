@@ -24,180 +24,170 @@
   <script src="{{ 'quick-order-list.js' | asset_url }}" defer="defer"></script>
 {%- endif -%}
 
-{{ 'featured-collection-slider.css' | asset_url | stylesheet_tag }}
-<div class="featured-collection-slider featured-collection-slider-{{section.id}}">
-    <div class="page-width">
+{{ 'collection-bundle.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'collection-bundle.js' | asset_url }}" defer="defer"></script>
 
-        {%- if section.settings.sub_heading != blank or section.settings.heading != blank or section.settings.short_note != blank -%}   
-        <div class="featured-collection-slider-header">
-            <div class="button-prev-wrap">
-                <div class="swiper-button-prev">
-                    {{- 'prev-arrow-icon.svg' | inline_asset_content -}}
-                </div>
-            </div>
-            <div class="featured-collection-info">
+<div class="collection-bundle collection-bundle-{{section.id}}">
+    <div class="page-width">
+        
+
+        <div class="collection-bundle-header">
+
+            <div class="coll-bundle-text">
                 {%- if section.settings.sub_heading != blank -%}
                 <span class="sub-heading">{{ section.settings.sub_heading }}</span>
                 {%- endif %}
                 {%- if section.settings.heading != blank -%}
                 <h2 class="heading">{{ section.settings.heading }}</h2>
                 {%- endif %}
-                {%- if section.settings.short_note != blank -%}
-                <div class="short-note">{{ section.settings.short_note }}</div>
-                {%- endif %}
             </div>
-            <div class="button-next-wrap">
-                <div class="swiper-button-next">
-                    {{- 'next-arrow-icon.svg' | inline_asset_content -}}
-                </div>
-            </div>
-        </div>
-        {%- endif -%}   
 
-        <div class="featured-collection-container">
-            <div class="featured-collection-list swiper">
-                <ul class="grid product-grid contains-card contains-card--product swiper-wrapper">
-                {% assign skip_card_product_styles = false %}
-                {%- for product in section.settings.collection.products -%}
-                    <li
-                    id="Slide-{{ section.id }}-{{ forloop.index }}"
-                    class="grid__item swiper-slide {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
-                    {% if settings.animations_reveal_on_scroll %}
-                        data-cascade
-                        style="--animation-order: {{ forloop.index }};"
-                    {% endif %}
-                    >
-                    {% render 'card-product',
-                        card_product: product,
-                        media_aspect_ratio: section.settings.image_ratio,
-                        image_shape: section.settings.image_shape,
-                        show_secondary_image: section.settings.show_secondary_image,
-                        show_vendor: section.settings.show_vendor,
-                        show_rating: section.settings.show_rating,
-                        skip_styles: skip_card_product_styles,
-                        section_id: section.id,
-                        quick_add: section.settings.quick_add
-                    %}
-                    </li>
-                    {%- assign skip_card_product_styles = true -%}
-                {%- else -%}
-                    {%- for i in (1..10) -%}
-                    <li
-                        class="grid__item swiper-slide {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
-                        {% if settings.animations_reveal_on_scroll %}
-                        data-cascade
-                        style="--animation-order: {{ forloop.index }};"
+            <div class="coll-bundle-tab">
+                <ul>
+                    {% for block in section.blocks %}
+                        {%  assign coll = block.settings.collection %}
+                        {% if block.settings.title != blank or coll != blank %}
+                        <li data-id="{{forloop.index}}" class="coll-tab-btn {% if forloop.first %}is--active{% endif %}">
+                            <a href="javascript:void(0);">
+                                {% if block.settings.title != blank %}
+                                 {{block.settings.title}}
+                                {% else %}
+                                 {{coll.title}}
+                                {% endif %}
+                            </a>
+                        </li>
                         {% endif %}
-                    >
-                        {% liquid
-                        assign ridx = forloop.index
-                        case ridx
-                            when 5
-                            assign ridx = 1
-                            when 6
-                            assign ridx = 2
-                            when 7
-                            assign ridx = 3
-                            when 8
-                            assign ridx = 4
-                            when 9
-                            assign ridx = 1
-                            when 10
-                            assign ridx = 2
-                        endcase
-                        %}
-                        {%- assign placeholder_image = 'product-apparel-' | append: ridx -%}
-                        {% render 'card-product',
-                        show_vendor: section.settings.show_vendor,
-                        media_aspect_ratio: section.settings.image_ratio,
-                        image_shape: section.settings.image_shape,
-                        placeholder_image: placeholder_image
-                        %}
-                    </li>
-                    {%- endfor -%}
-                {%- endfor -%}
+                    {% endfor %}
                 </ul>
             </div>
+
+            <div class="slider-arrows">
+                <a href="/">View All Bundles</a>
+                <div class="slider-btn-list">
+                    <div class="button-prev-wrap">
+                        {{- 'prev-arrow-icon.svg' | inline_asset_content -}}
+                    </div>
+                    <div class="button-next-wrap">
+                        {{- 'next-arrow-icon.svg' | inline_asset_content -}}
+                    </div>
+                </div>
+            </div>
+
         </div>
+
+        {% if section.blocks.size != 0 %}
+        <div class="collection-bundle-body">
+            <ul>
+                {% for block in section.blocks %} 
+                    <li data-id="{{forloop.index}}" class="coll-bundle-content {% if forloop.first %}is--active{% endif %}">
+                        <div class="collection-bundle-slider swiper">
+                            <div class="swiper-button-prev" style="display:none;"></div>
+                            <div class="swiper-button-next" style="display:none;"></div>
+                            <ul class="grid product-grid contains-card contains-card--product swiper-wrapper">
+                                {% assign skip_card_product_styles = false %}
+                                    {%- for product in block.settings.collection.products -%}
+                                        <li
+                                        id="Slide-{{ section.id }}-{{ forloop.index }}"
+                                        class="grid__item swiper-slide {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+                                        {% if settings.animations_reveal_on_scroll %}
+                                            data-cascade
+                                            style="--animation-order: {{ forloop.index }};"
+                                        {% endif %}
+                                        >
+                                        {% render 'card-product',
+                                            card_product: product,
+                                            media_aspect_ratio: section.settings.image_ratio,
+                                            image_shape: section.settings.image_shape,
+                                            show_secondary_image: section.settings.show_secondary_image,
+                                            show_vendor: section.settings.show_vendor,
+                                            show_rating: section.settings.show_rating,
+                                            skip_styles: skip_card_product_styles,
+                                            section_id: section.id,
+                                            quick_add: section.settings.quick_add
+                                        %}
+                                        </li>
+                                        {%- assign skip_card_product_styles = true -%}
+                                    {%- else -%}
+                                        {%- for i in (1..10) -%}
+                                        <li
+                                            class="grid__item swiper-slide {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+                                            {% if settings.animations_reveal_on_scroll %}
+                                            data-cascade
+                                            style="--animation-order: {{ forloop.index }};"
+                                            {% endif %}
+                                        >
+                                            {% liquid
+                                            assign ridx = forloop.index
+                                            case ridx
+                                                when 5
+                                                assign ridx = 1
+                                                when 6
+                                                assign ridx = 2
+                                                when 7
+                                                assign ridx = 3
+                                                when 8
+                                                assign ridx = 4
+                                                when 9
+                                                assign ridx = 1
+                                                when 10
+                                                assign ridx = 2
+                                            endcase
+                                            %}
+                                            {%- assign placeholder_image = 'product-apparel-' | append: ridx -%}
+                                            {% render 'card-product',
+                                            show_vendor: section.settings.show_vendor,
+                                            media_aspect_ratio: section.settings.image_ratio,
+                                            image_shape: section.settings.image_shape,
+                                            placeholder_image: placeholder_image
+                                            %}
+                                        </li>
+                                        {%- endfor -%}
+                                    {%- endfor -%}
+                            </ul>
+                        </div>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% endif %}
 
     </div>
 </div>
+
+
 <style>
-.featured-collection-slider-{{section.id}}{
+.collection-bundle-{{section.id}}{
     padding-top:{{section.settings.padding_top_desktop}}px;
     padding-bottom:{{section.settings.padding_bottom_desktop}}px;
     background-color:{{section.settings.background_color}};
 }  
-.featured-collection-slider-{{section.id}} .sub-heading{
+.collection-bundle-{{section.id}} .sub-heading{
     font-size: {{section.settings.sub_heading_size_desktop}}px;
     color: {{section.settings.sub_heading_color}};
 }
-.featured-collection-slider-{{section.id}} .heading{
+.collection-bundle-{{section.id}} .heading{
     font-size: {{section.settings.heading_size_desktop}}px;
     color: {{section.settings.heading_color}};
 }
-.featured-collection-slider-{{section.id}} .short-note,
-.featured-collection-slider-{{section.id}} .short-note p a{
-    font-size: {{section.settings.short_note_desktop}}px;
-    color: {{section.settings.short_note_color}};
-}
+
+
 @media(max-width:749px){
-    .featured-collection-slider-{{section.id}}{
+    .collection-bundle-{{section.id}}{
         padding-top:{{section.settings.padding_top_mobile}}px;
         padding-bottom:{{section.settings.padding_bottom_mobile}}px;
     }  
-    .featured-collection-slider-{{section.id}} .sub-heading{
+    .collection-bundle-{{section.id}} .sub-heading{
         font-size: {{section.settings.sub_heading_size_mobile}}px;
     }
-    .featured-collection-slider-{{section.id}} .heading{
+    .collection-bundle-{{section.id}} .heading{
         font-size: {{section.settings.heading_size_mobile}}px;
     }  
-    .featured-collection-slider-{{section.id}} .short-note,
-    .featured-collection-slider-{{section.id}} .short-note p a{
-        font-size: {{section.settings.short_note_mobile}}px;
-    } 
 }  
 </style>
 
-<script>
- var swiper = new Swiper(".featured-collection-slider-{{section.id}} .featured-collection-list", {
-    slidesPerView: 1.2,
-    spaceBetween: 14,
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
-    breakpoints: {
-        500: {
-          slidesPerView: 2,
-<<<<<<< HEAD
-          spaceBetween: 20,
-        },
-        768: {
-          slidesPerView: 3,
-          spaceBetween: 25,
-        },
-        1200: {
-          slidesPerView: 4,
-          spaceBetween: 30,
-=======
-          spaceBetween: 14,
-        },
-        768: {
-          slidesPerView: 3,
-          spaceBetween: 20,
-        },
-        1200: {
-          slidesPerView: 4,
-          spaceBetween: 20,
->>>>>>> development
-        },
-    },
-});   
-</script>
 {% schema %}
     {
-      "name": "featured coll slider",
+      "name": "Collection bundle",
       "settings": [
         {
             "type": "color",
@@ -278,47 +268,7 @@
         },
         {
             "type": "header",
-            "content": "short Note"
-        },
-        {
-            "type": "richtext",
-            "id": "short_note",
-            "label": "Short note"
-        },
-        {
-            "type": "color",
-            "id": "short_note_color",
-            "label": "Short note color",
-            "default": "#000"
-        },
-        {
-            "type": "range",
-            "id": "short_note_desktop",
-            "label": "Short note size(desktop)",
-            "min": 0,
-            "max": 50,
-            "step": 1,
-            "unit": "px",
-            "default": 14
-        },
-        {
-            "type": "range",
-            "id": "short_note_mobile",
-            "label": "Short note size(mobile)",
-            "min": 0,
-            "max": 50,
-            "step": 1,
-            "unit": "px",
-            "default": 14   
-        },
-        {
-            "type": "header",
             "content": "Collection"
-        },
-        {
-            "type": "collection",
-            "id": "collection",
-            "label": "Collection"
         },
         {
             "type": "select",
@@ -464,11 +414,29 @@
             "unit": "px",
             "label": "Padding bottom(Mobile)",
             "default": 30
+        }  
+      ],
+      "blocks": [
+        {
+          "type": "collection",
+          "name": "collection",
+          "settings": [
+            {
+                "type": "text",
+                "id": "title",
+                "label": "Title"
+            },
+            {
+                "type": "collection",
+                "id": "collection",
+                "label": "collection"
+            }
+          ]
         }
       ],
       "presets": [
         {
-          "name":"featured coll slider"
+          "name":"Collection bundle"
         }
       ]
     }

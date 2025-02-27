@@ -23,6 +23,10 @@
 }
 .featured-collection-list ul.contains-card {
     margin-top: 50px;
+<<<<<<< HEAD
+=======
+    margin-bottom: 0;
+>>>>>>> development
     gap: 20px;
     flex-wrap: unset;
 }

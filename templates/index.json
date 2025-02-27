@@ -323,7 +323,11 @@
         "short_note_desktop": 16,
         "short_note_mobile": 14,
         "padding_top_desktop": 80,
+<<<<<<< HEAD
         "padding_bottom_desktop": 80,
+=======
+        "padding_bottom_desktop": 60,
+>>>>>>> development
         "padding_top_mobile": 50,
         "padding_bottom_mobile": 30
       }
@@ -344,7 +348,11 @@
         "short_note_color": "#000000",
         "short_note_desktop": 16,
         "short_note_mobile": 14,
+<<<<<<< HEAD
         "collection": "",
+=======
+        "collection": "frontpage",
+>>>>>>> development
         "image_ratio": "adapt",
         "image_shape": "default",
         "show_secondary_image": true,
@@ -396,17 +404,29 @@
         "block_ELdkY7"
       ],
       "settings": {
+<<<<<<< HEAD
         "background_color": "#fff",
+=======
+        "background_color": "#ffffff",
+>>>>>>> development
         "sub_heading": "🧐 Why Health & Fitness",
         "sub_heading_color": "#1b1f23",
         "sub_heading_size_desktop": 16,
         "sub_heading_size_mobile": 14,
+<<<<<<< HEAD
         "heading": "Clean Supplements -<br> Made For You",
+=======
+        "heading": "Clean Supplements - Made For You",
+>>>>>>> development
         "heading_color": "#1b1f23",
         "heading_size_desktop": 40,
         "heading_size_mobile": 22,
         "short_note": "",
+<<<<<<< HEAD
         "short_note_color": "#000",
+=======
+        "short_note_color": "#000000",
+>>>>>>> development
         "short_note_desktop": 14,
         "short_note_mobile": 14,
         "padding_top_desktop": 80,
@@ -417,10 +437,85 @@
     },
     "video_with_product_4rTUqw": {
       "type": "video-with-product",
+<<<<<<< HEAD
       "settings": {
         "background_color": "#fff",
         "sub_heading": "Trusted & Proven by Science",
         "sub_heading_color": "#000",
+=======
+      "blocks": {
+        "block_GH6cHm": {
+          "type": "block",
+          "settings": {
+            "video": "shopify://files/videos/892f479db18f4350ba1050251ed5ea37.HD-1080p-4.8Mbps-31942476.mp4",
+            "product": "magnesium-l-threonate"
+          }
+        },
+        "block_pRFM7t": {
+          "type": "block",
+          "settings": {
+            "video": "shopify://files/videos/b25a5ab1c3004cf78dc5ea8c1b0a98cf.HD-720p-1.6Mbps-28520932.mp4",
+            "product": "magnesium-l-threonate"
+          }
+        },
+        "block_rAJddE": {
+          "type": "block",
+          "settings": {
+            "video": "shopify://files/videos/892f479db18f4350ba1050251ed5ea37.HD-1080p-4.8Mbps-31942476.mp4",
+            "product": "grass-fed-whey-protein-isolate-powder"
+          }
+        },
+        "block_tiYb47": {
+          "type": "block",
+          "settings": {
+            "video": "shopify://files/videos/b25a5ab1c3004cf78dc5ea8c1b0a98cf.HD-720p-1.6Mbps-28520932.mp4",
+            "product": "complete-sleep-bundle"
+          }
+        },
+        "block_BwJNag": {
+          "type": "block",
+          "settings": {
+            "video": "shopify://files/videos/892f479db18f4350ba1050251ed5ea37.HD-1080p-4.8Mbps-31942476.mp4",
+            "product": "tongkat-fadogia-60-day-supply"
+          }
+        },
+        "block_nQcadc": {
+          "type": "block",
+          "settings": {
+            "video": "shopify://files/videos/b25a5ab1c3004cf78dc5ea8c1b0a98cf.HD-720p-1.6Mbps-28520932.mp4",
+            "product": "tongkat-fadogia-60-day-supply"
+          }
+        },
+        "block_CHj43H": {
+          "type": "block",
+          "settings": {
+            "video": "shopify://files/videos/892f479db18f4350ba1050251ed5ea37.HD-1080p-4.8Mbps-31942476.mp4",
+            "product": "complete-sleep-bundle"
+          }
+        },
+        "block_fMAdVt": {
+          "type": "block",
+          "settings": {
+            "video": "shopify://files/videos/b25a5ab1c3004cf78dc5ea8c1b0a98cf.HD-720p-1.6Mbps-28520932.mp4",
+            "product": "magnesium-l-threonate"
+          }
+        }
+      },
+      "block_order": [
+        "block_GH6cHm",
+        "block_pRFM7t",
+        "block_rAJddE",
+        "block_tiYb47",
+        "block_BwJNag",
+        "block_nQcadc",
+        "block_CHj43H",
+        "block_fMAdVt"
+      ],
+      "settings": {
+        "background_color": "#f6f6f5",
+        "sub_heading": "Trusted & Proven by Science",
+        "sub_heading_color": "#000000",
+>>>>>>> development
         "sub_heading_size_desktop": 16,
         "sub_heading_size_mobile": 14,
         "heading": "Real People. Real Results.",
@@ -428,7 +523,11 @@
         "heading_size_desktop": 40,
         "heading_size_mobile": 22,
         "short_note": "<p><a href=\"/collections/all\" title=\"All products\">View All</a></p>",
+<<<<<<< HEAD
         "short_note_color": "#000",
+=======
+        "short_note_color": "#000000",
+>>>>>>> development
         "short_note_desktop": 16,
         "short_note_mobile": 14,
         "padding_top_desktop": 80,
@@ -436,6 +535,197 @@
         "padding_top_mobile": 40,
         "padding_bottom_mobile": 30
       }
+<<<<<<< HEAD
+=======
+    },
+    "collection_bundle_EGBJjj": {
+      "type": "collection-bundle",
+      "blocks": {
+        "collection_LdErkH": {
+          "type": "collection",
+          "settings": {
+            "title": "Sleep",
+            "collection": "frontpage"
+          }
+        },
+        "collection_K6hiae": {
+          "type": "collection",
+          "settings": {
+            "title": "Cognitive Function",
+            "collection": "frontpage"
+          }
+        }
+      },
+      "block_order": [
+        "collection_LdErkH",
+        "collection_K6hiae"
+      ],
+      "settings": {
+        "background_color": "#fff",
+        "sub_heading": "📦 Goals Specific",
+        "sub_heading_color": "#000",
+        "sub_heading_size_desktop": 16,
+        "sub_heading_size_mobile": 14,
+        "heading": "Bundles",
+        "heading_color": "#1b1f23",
+        "heading_size_desktop": 40,
+        "heading_size_mobile": 22,
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "standard",
+        "padding_top_desktop": 80,
+        "padding_bottom_desktop": 80,
+        "padding_top_mobile": 40,
+        "padding_bottom_mobile": 30
+      }
+    },
+    "image_with_content_AhWUhG": {
+      "type": "image-with-content",
+      "blocks": {
+        "slide_RJyHne": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Image_6_0f4e3602-7b0b-44a2-a663-e8c73c2a3071.png",
+            "title": "The Blend",
+            "topcolumnicon": "shopify://shop_images/leaves_1_1.svg",
+            "caption1": "Whey Based",
+            "caption2": "Build Muscle",
+            "caption3": "Clean Ingredients",
+            "bgtop": "#1b1f23",
+            "bottomtitle": "Active Ingredients",
+            "bottomcolumnicon": "shopify://shop_images/Group.svg",
+            "bottomcolumnheading1": "Whey Protein Isolate",
+            "bottomcolumndesc1": "Low Calorie With Virtually No Fat or Lactose, Quickly Absorbed To Maximize Muscle Building & Repair.",
+            "bottomcolumnheading2": "Whey Protein Isolate",
+            "bottomcolumndesc2": "Low Calorie With Virtually No Fat or Lactose, Quickly Absorbed To Maximize Muscle Building & Repair.",
+            "bottomcolumnheading3": "Whey Protein Isolate",
+            "bottomcolumndesc3": "Low Calorie With Virtually No Fat or Lactose, Quickly Absorbed To Maximize Muscle Building & Repair.",
+            "button": "Customize This Blend",
+            "btnurl": "/",
+            "btncolor": "#ffffff",
+            "btnbg": "#1b1f23"
+          }
+        },
+        "slide_MjEKxR": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Image_7.png",
+            "title": "The Blend",
+            "topcolumnicon": "shopify://shop_images/leaves_1_1.svg",
+            "caption1": "Whey Based",
+            "caption2": "Build Muscle",
+            "caption3": "Clean Ingredients",
+            "bgtop": "#1b1f23",
+            "bottomtitle": "Active Ingredients",
+            "bottomcolumnicon": "shopify://shop_images/Group.svg",
+            "bottomcolumnheading1": "Whey Protein Isolate",
+            "bottomcolumndesc1": "Low Calorie With Virtually No Fat or Lactose, Quickly Absorbed To Maximize Muscle Building & Repair.",
+            "bottomcolumnheading2": "Whey Protein Isolate",
+            "bottomcolumndesc2": "Low Calorie With Virtually No Fat or Lactose, Quickly Absorbed To Maximize Muscle Building & Repair.",
+            "bottomcolumnheading3": "Whey Protein Isolate",
+            "bottomcolumndesc3": "Low Calorie With Virtually No Fat or Lactose, Quickly Absorbed To Maximize Muscle Building & Repair.",
+            "button": "Customize This Blend",
+            "btnurl": "/",
+            "btncolor": "#ffffff",
+            "btnbg": "#1b1f23"
+          }
+        }
+      },
+      "block_order": [
+        "slide_RJyHne",
+        "slide_MjEKxR"
+      ],
+      "settings": {
+        "background": "#F6F6F5",
+        "subheading": "Simple & Effective Ingredients",
+        "subheadingtext": "#000000",
+        "subheadingfontsize": 16,
+        "title": "<h2>Customized Protein Powder</h2>",
+        "headingtext": "#1b1f23",
+        "headingfontsize": 40,
+        "headingfontsizemobile": 22,
+        "alignment": "center",
+        "padding-top": 80,
+        "padding-bottom": 80,
+        "padding-top-mobile": 40,
+        "padding-bottom-mobile": 40
+      }
+    },
+    "banner_image_2_LhaXm8": {
+      "type": "banner-image-2",
+      "blocks": {
+        "heading_TCTGKw": {
+          "type": "heading",
+          "settings": {
+            "heading": "The Next Generation is Here",
+            "heading_size": "h1"
+          }
+        },
+        "text_LiKaBD": {
+          "type": "text",
+          "settings": {
+            "text": "Innovative Engineering. Intelligent Design. Meet The Plunge All-I.",
+            "text_style": "body"
+          }
+        },
+        "buttons_KRXTE8": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Take The Plunge",
+            "button_link_1": "/",
+            "button_style_secondary_1": false,
+            "button_label_2": "Dive Deeper",
+            "button_link_2": "/",
+            "button_style_secondary_2": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_TCTGKw",
+        "text_LiKaBD",
+        "buttons_KRXTE8"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Rectangle_478.png",
+        "image_overlay_opacity": 10,
+        "image_height": "adapt",
+        "desktop_content_position": "middle-left",
+        "show_text_box": false,
+        "desktop_content_alignment": "left",
+        "color_scheme": "scheme-4",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": false,
+        "padding-top": 80,
+        "padding-bottom": 80,
+        "padding-top-mobile": 40,
+        "padding-bottom-mobile": 40
+      }
+    },
+    "featured_blog_latest_C9wkCy": {
+      "type": "featured-blog-latest",
+      "settings": {
+        "subheading": "✍️ Blogs",
+        "subheadingfont_size": 16,
+        "subheadingcolor": "#1b1f23",
+        "heading": "Latest Articles",
+        "headingfont_size": 40,
+        "headingfont_size_mobile": 22,
+        "headingcolor": "#1b1f23",
+        "blog": "news",
+        "show_image": true,
+        "show_date": true,
+        "show_author": true,
+        "tags": true,
+        "show_view_all": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+>>>>>>> development
     }
   },
   "order": [
@@ -445,6 +735,14 @@
     "heading_with_block_wF4WtK",
     "featured_collection_slider_Th4NAe",
     "icon_with_content_kYYABm",
+<<<<<<< HEAD
     "video_with_product_4rTUqw"
+=======
+    "video_with_product_4rTUqw",
+    "collection_bundle_EGBJjj",
+    "image_with_content_AhWUhG",
+    "banner_image_2_LhaXm8",
+    "featured_blog_latest_C9wkCy"
+>>>>>>> development
   ]
 }
