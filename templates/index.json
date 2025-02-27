@@ -323,7 +323,7 @@
         "short_note_desktop": 16,
         "short_note_mobile": 14,
         "padding_top_desktop": 80,
-        "padding_bottom_desktop": 80,
+        "padding_bottom_desktop": 60,
         "padding_top_mobile": 50,
         "padding_bottom_mobile": 30
       }
