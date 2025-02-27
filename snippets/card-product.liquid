@@ -144,7 +144,7 @@
             {% endcomment %}
 
             {% assign tag_name = "" %} 
-            {% for tag in product.tags %}
+            {% for tag in card_product.tags %}
                 {% if tag contains "label_:" %}
                   {% assign tag_name = tag | split: '_:' | last %} 
                   <span id="NoMediaStandardBadge-{{ section_id }}-{{ card_product.id }}" class="badge {{tag_name}} color-{{ settings.sale_badge_color_scheme }}">
