@@ -563,7 +563,31 @@
         "slide_RJyHne": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Image_5_f378fb9f-7848-4153-8dad-d1e94b098b93.png",
+            "image": "shopify://shop_images/Image_6_0f4e3602-7b0b-44a2-a663-e8c73c2a3071.png",
+            "title": "The Blend",
+            "topcolumnicon": "shopify://shop_images/leaves_1_1.svg",
+            "caption1": "Whey Based",
+            "caption2": "Build Muscle",
+            "caption3": "Clean Ingredients",
+            "bgtop": "#1B1F23",
+            "bottomtitle": "Active Ingredients",
+            "bottomcolumnicon": "shopify://shop_images/Group.svg",
+            "bottomcolumnheading1": "Whey Protein Isolate",
+            "bottomcolumndesc1": "Low Calorie With Virtually No Fat or Lactose, Quickly Absorbed To Maximize Muscle Building & Repair.",
+            "bottomcolumnheading2": "Whey Protein Isolate",
+            "bottomcolumndesc2": "Low Calorie With Virtually No Fat or Lactose, Quickly Absorbed To Maximize Muscle Building & Repair.",
+            "bottomcolumnheading3": "Whey Protein Isolate",
+            "bottomcolumndesc3": "Low Calorie With Virtually No Fat or Lactose, Quickly Absorbed To Maximize Muscle Building & Repair.",
+            "button": "Customize This Blend",
+            "btnurl": "/",
+            "btncolor": "#fff",
+            "btnbg": "#1B1F23"
+          }
+        },
+        "slide_MjEKxR": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Image_7.png",
             "title": "The Blend",
             "topcolumnicon": "shopify://shop_images/leaves_1_1.svg",
             "caption1": "Whey Based",
@@ -586,7 +610,8 @@
         }
       },
       "block_order": [
-        "slide_RJyHne"
+        "slide_RJyHne",
+        "slide_MjEKxR"
       ],
       "settings": {
         "background": "#F6F6F5",
