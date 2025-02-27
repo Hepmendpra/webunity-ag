@@ -504,6 +504,58 @@
         "padding_top_mobile": 40,
         "padding_bottom_mobile": 30
       }
+    },
+    "banner_image_2_LhaXm8": {
+      "type": "banner-image-2",
+      "blocks": {
+        "heading_TCTGKw": {
+          "type": "heading",
+          "settings": {
+            "heading": "The Next Generation is Here",
+            "heading_size": "h1"
+          }
+        },
+        "text_LiKaBD": {
+          "type": "text",
+          "settings": {
+            "text": "Innovative Engineering. Intelligent Design. Meet The Plunge All-I.",
+            "text_style": "body"
+          }
+        },
+        "buttons_KRXTE8": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Take The Plunge",
+            "button_link_1": "/",
+            "button_style_secondary_1": false,
+            "button_label_2": "Dive Deeper",
+            "button_link_2": "/",
+            "button_style_secondary_2": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_TCTGKw",
+        "text_LiKaBD",
+        "buttons_KRXTE8"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Rectangle_478.png",
+        "image_overlay_opacity": 20,
+        "image_height": "adapt",
+        "desktop_content_position": "middle-left",
+        "show_text_box": false,
+        "desktop_content_alignment": "left",
+        "color_scheme": "scheme-4",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": false,
+        "padding-top": 80,
+        "padding-bottom": 80,
+        "padding-top-mobile": 40,
+        "padding-bottom-mobile": 40
+      }
     }
   },
   "order": [
@@ -513,6 +565,7 @@
     "heading_with_block_wF4WtK",
     "featured_collection_slider_Th4NAe",
     "icon_with_content_kYYABm",
-    "video_with_product_4rTUqw"
+    "video_with_product_4rTUqw",
+    "banner_image_2_LhaXm8"
   ]
 }
