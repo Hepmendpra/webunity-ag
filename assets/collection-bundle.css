@@ -42,3 +42,29 @@
     flex-wrap: unset;
     gap: 0;
 }
+.collection-bundle-header .slider-arrows {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 24px;
+}
+.collection-bundle-header .slider-arrows a {
+    font-size: 18px;
+    line-height: 1.2;
+    color: #1B1F23;
+    font-weight: 400;
+}
+.collection-bundle-header .slider-btn-list {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.collection-bundle-header .slider-btn-list>* {
+    width: 4rem;
+    height: 4rem;
+    border: 1px solid #1B1F231A;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
