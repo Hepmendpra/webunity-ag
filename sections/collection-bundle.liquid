@@ -50,6 +50,19 @@
                     {% endfor %}
                 </ul>
             </div>
+
+            <div class="slider-arrows">
+                <a href="/">View All Bundles</a>
+                <div class="slider-btn-list">
+                    <div class="button-prev-wrap">
+                        {{- 'prev-arrow-icon.svg' | inline_asset_content -}}
+                    </div>
+                    <div class="button-next-wrap">
+                        {{- 'next-arrow-icon.svg' | inline_asset_content -}}
+                    </div>
+                </div>
+            </div>
+
         </div>
 
         {% if section.blocks.size != 0 %}
@@ -58,6 +71,8 @@
                 {% for block in section.blocks %} 
                     <li data-id="{{forloop.index}}" class="coll-bundle-content {% if forloop.first %}is--active{% endif %}">
                         <div class="collection-bundle-slider swiper">
+                            <div class="swiper-button-prev" style="display:none;"></div>
+                            <div class="swiper-button-next" style="display:none;"></div>
                             <ul class="grid product-grid contains-card contains-card--product swiper-wrapper">
                                 {% assign skip_card_product_styles = false %}
                                     {%- for product in block.settings.collection.products -%}
