@@ -593,3 +593,20 @@
     clip-path: polygon(var(--shape--blob-5));
   }
 }
+
+
+
+.card-wrapper {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  width: calc(100% - 4rem);
+  padding: 2rem;
+}
+.card-wrapper .card,
+.card-wrapper .card>.card__content {
+  width: 100%;
+}
+.card-wrapper .card .card__inner {
+  background: transparent;
+}

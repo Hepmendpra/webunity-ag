@@ -680,12 +680,8 @@ quantity-popover cart-remove-button .button {
 .cart-drawer .mini-cart-recommendation-head .swiper-button-next {
   right: 0;
 }
-
 .cart-drawer .mini-cart-recommendation-head .swiper-button-prev {
   left: 0;
-}
-.cart-drawer .drawer__footer {
-  padding: 34px 0;
 }
 .cart-drawer .mini-cart-recommendation-head {
   display: flex;
@@ -749,4 +745,3 @@ quantity-popover cart-remove-button .button {
 
 
 
- 
