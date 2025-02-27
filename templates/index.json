@@ -514,10 +514,18 @@
             "title": "Sleep",
             "collection": "frontpage"
           }
+        },
+        "collection_K6hiae": {
+          "type": "collection",
+          "settings": {
+            "title": "Cognitive Function",
+            "collection": "frontpage"
+          }
         }
       },
       "block_order": [
-        "collection_LdErkH"
+        "collection_LdErkH",
+        "collection_K6hiae"
       ],
       "settings": {
         "image_ratio": "adapt",
