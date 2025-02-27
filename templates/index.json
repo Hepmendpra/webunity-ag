@@ -557,16 +557,63 @@
         "padding-bottom-mobile": 40
       }
     },
+    "image_with_content_AhWUhG": {
+      "type": "image-with-content",
+      "blocks": {
+        "slide_RJyHne": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Image_5_f378fb9f-7848-4153-8dad-d1e94b098b93.png",
+            "title": "The Blend",
+            "topcolumnicon": "shopify://shop_images/leaves_1_1.svg",
+            "caption1": "Whey Based",
+            "caption2": "Build Muscle",
+            "caption3": "Clean Ingredients",
+            "bgtop": "#1B1F23",
+            "bottomtitle": "Active Ingredients",
+            "bottomcolumnicon": "shopify://shop_images/Group.svg",
+            "bottomcolumnheading1": "Whey Protein Isolate",
+            "bottomcolumndesc1": "Low Calorie With Virtually No Fat or Lactose, Quickly Absorbed To Maximize Muscle Building & Repair.",
+            "bottomcolumnheading2": "Whey Protein Isolate",
+            "bottomcolumndesc2": "Low Calorie With Virtually No Fat or Lactose, Quickly Absorbed To Maximize Muscle Building & Repair.",
+            "bottomcolumnheading3": "Whey Protein Isolate",
+            "bottomcolumndesc3": "Low Calorie With Virtually No Fat or Lactose, Quickly Absorbed To Maximize Muscle Building & Repair.",
+            "button": "Customize This Blend",
+            "btnurl": "/",
+            "btncolor": "#fff",
+            "btnbg": "#1B1F23"
+          }
+        }
+      },
+      "block_order": [
+        "slide_RJyHne"
+      ],
+      "settings": {
+        "background": "#F6F6F5",
+        "subheading": "Simple & Effective Ingredients",
+        "subheadingtext": "#000000",
+        "subheadingfontsize": 16,
+        "title": "<h2>Customized Protein Powder</h2>",
+        "headingtext": "#1B1F23",
+        "headingfontsize": 40,
+        "headingfontsizemobile": 22,
+        "alignment": "center",
+        "padding-top": 80,
+        "padding-bottom": 80,
+        "padding-top-mobile": 40,
+        "padding-bottom-mobile": 40
+      }
+    },
     "featured_blog_latest_C9wkCy": {
       "type": "featured-blog-latest",
       "settings": {
         "subheading": "✍️ Blogs",
         "subheadingfont_size": 16,
-        "subheadingcolor": "#1B1F23",
+        "subheadingcolor": "#1b1f23",
         "heading": "Latest Articles",
         "headingfont_size": 40,
         "headingfont_size_mobile": 22,
-        "headingcolor": "#1B1F23",
+        "headingcolor": "#1b1f23",
         "blog": "",
         "show_image": true,
         "show_date": true,
@@ -587,6 +634,7 @@
     "icon_with_content_kYYABm",
     "video_with_product_4rTUqw",
     "banner_image_2_LhaXm8",
+    "image_with_content_AhWUhG",
     "featured_blog_latest_C9wkCy"
   ]
 }
