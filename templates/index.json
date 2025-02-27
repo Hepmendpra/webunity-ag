@@ -344,7 +344,7 @@
         "short_note_color": "#000000",
         "short_note_desktop": 16,
         "short_note_mobile": 14,
-        "collection": "",
+        "collection": "frontpage",
         "image_ratio": "adapt",
         "image_shape": "default",
         "show_secondary_image": true,
