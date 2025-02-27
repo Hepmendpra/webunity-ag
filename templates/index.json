@@ -507,6 +507,18 @@
     },
     "collection_bundle_EGBJjj": {
       "type": "collection-bundle",
+      "blocks": {
+        "collection_LdErkH": {
+          "type": "collection",
+          "settings": {
+            "title": "Sleep",
+            "collection": "frontpage"
+          }
+        }
+      },
+      "block_order": [
+        "collection_LdErkH"
+      ],
       "settings": {
         "image_ratio": "adapt",
         "image_shape": "default",
