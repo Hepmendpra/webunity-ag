@@ -39,7 +39,7 @@
                 aria-label="{{ 'accessibility.close' | t }}"
               >
                 <span class="svg-wrapper">
-                  {{- 'icon-close.svg' | inline_asset_content -}}
+                  {{- 'cart-close-icon.svg' | inline_asset_content -}}
                 </span>
               </button>
               <a href="{{ routes.all_products_collection_url }}" class="button">
@@ -70,9 +70,22 @@
           aria-label="{{ 'accessibility.close' | t }}"
         >
           <span class="svg-wrapper">
-            {{- 'icon-close.svg' | inline_asset_content -}}
+            {{- 'cart-close-icon.svg' | inline_asset_content -}}
           </span>
         </button>
+      </div>
+      <div class="drawer-progess-bar">
+         <p class="remaing-range">You are <span>{{ 10000 |  minus: cart.total_price | money }}</span> away from eligible for free shipping</p>
+         <p class="fill-range">🌟You are eligible for free shipping 📦</p>
+         <div class="shipping-progress-bar">
+          <span>{{0 |  money}}</span>
+            <div class="progress-bar">
+              {% assign per_width = cart.total_price |  minus: 10000 |  times: 100 |  divided_by: cart.total_price %}
+              {% assign final_result = 100 |  minus: per_width %}
+              <div class="progress_inner" style="width:{{final_result}}%;"></div>
+            </div>
+          <span>{{10000 |  money}}</span>
+         </div>
       </div>
       <cart-drawer-items
         {% if cart == empty %}

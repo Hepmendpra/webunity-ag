@@ -414,6 +414,21 @@ cart-drawer-items::-webkit-scrollbar-track-piece {
   margin: 0;
   font-size: 34px;
   line-height: 1.2;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.drawer__heading span.item-count {
+  width: 3.6rem;
+  height: 3.6rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: #1B1F23;
+  color: #Fff;
+  border-radius: 50%;
+  font-size: 18px;
+  line-height: 1;
 }
 .drawer__header .drawer__close {
   min-width: 3rem;
