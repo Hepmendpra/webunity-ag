@@ -158,18 +158,20 @@
           </div>
         </div>
       </div>
-      <div class="card__content">
+      <div class="card__content hiiii">
         <div class="card__information">
 
            <div class="card_tags">
             <ul>
             {% for tag in card_product.tags %}
-              <li>
+              
               {% if tag contains "label_:" %}
                 {% else %}
+                <li>
                 {{tag}}
+                </li>
               {% endif %}
-              </li>
+              
             {% endfor %}
             </ul>
            </div> 
