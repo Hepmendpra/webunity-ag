@@ -67,6 +67,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 .collection-bundle-body .product-card-wrapper {
     background: #F6F6F5;
