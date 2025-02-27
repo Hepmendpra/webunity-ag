@@ -330,6 +330,7 @@
     },
     "featured_collection_slider_Th4NAe": {
       "type": "featured-collection-slider",
+      "disabled": true,
       "settings": {
         "background_color": "#f6f6f5",
         "sub_heading": "🌟 Trending",
@@ -561,7 +562,6 @@
         "slide_RJyHne",
         "slide_MjEKxR"
       ],
-      "disabled": true,
       "settings": {
         "background": "#F6F6F5",
         "subheading": "Simple & Effective Ingredients",
