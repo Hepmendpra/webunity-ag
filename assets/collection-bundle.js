@@ -64,6 +64,17 @@ prev_btn.addEventListener("click", function (item) {
     }else{
         var _this_prev_btn = _this.closest('.button-prev-wrap');
     }
-    var _this_prev_btn = item.closest('.collection-bundle').querySelector('.collection-bundle-body .is--active').querySelector('.swiper-button-prev');
+    var _this_prev_btn = _this_prev_btn.closest('.collection-bundle').querySelector('.collection-bundle-body').querySelector('.is--active').querySelector('.swiper-button-prev');
+    _this_prev_btn.dispatchEvent(new Event('click'));
+});
+
+next_btn.addEventListener("click", function (item) {
+    var _this = item.target;
+    if (_this.classList.contains("button-next-wrap")){
+        var _this_prev_btn = _this.target;
+    }else{
+        var _this_prev_btn = _this.closest('.button-next-wrap');
+    }
+    var _this_prev_btn = _this_prev_btn.closest('.collection-bundle').querySelector('.collection-bundle-body').querySelector('.is--active').querySelector('.swiper-button-prev');
     _this_prev_btn.dispatchEvent(new Event('click'));
 });
