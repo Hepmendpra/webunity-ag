@@ -75,14 +75,21 @@
         </button>
       </div>
       <div class="drawer-progess-bar">
+        {% if cart.total_price < 10000 %}
          <p class="remaing-range">You are <span>{{ 10000 |  minus: cart.total_price | money }}</span> away from eligible for free shipping</p>
+         {% else %}
          <p class="fill-range">🌟You are eligible for free shipping 📦</p>
+        {% endif %}
          <div class="shipping-progress-bar">
           <span>{{0 |  money}}</span>
             <div class="progress-bar">
-              {% assign per_width = cart.total_price |  minus: 10000 |  times: 100 |  divided_by: cart.total_price %}
+              {% assign per_width = 10000 |  minus: cart.total_price |  times: 100 |  divided_by: 10000 %}
               {% assign final_result = 100 |  minus: per_width %}
+              {% if cart.total_price < 10000 %}
               <div class="progress_inner" style="width:{{final_result}}%;"></div>
+              {% else %}
+              <div class="progress_inner" style="width:0%;"></div> 
+              {% endif %}
             </div>
           <span>{{10000 |  money}}</span>
          </div>

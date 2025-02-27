@@ -442,3 +442,42 @@ cart-drawer-items::-webkit-scrollbar-track-piece {
   height: 1.5rem;
   width: 1.5rem;
 }
+.drawer-progess-bar p {
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+  margin: 0;
+  color: #1B1F23;
+  font-weight: 400;
+}
+.drawer-progess-bar p span {
+  font-weight: 600;
+}
+.shipping-progress-bar {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 1.5rem;
+  align-items: center;
+  margin-top: 8px;
+}
+.shipping-progress-bar span {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #1B1F23;
+  font-weight: 500;
+}
+.shipping-progress-bar .progress-bar {
+  height: 3px;
+  width: 100%;
+  background: #00000029;
+  position: relative;
+  overflow: hidden;
+}
+.shipping-progress-bar .progress-bar .progress_inner {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background: #000;
+  display: block;
+}
