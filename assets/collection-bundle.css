@@ -60,7 +60,7 @@
     font-weight: 400;
 }
 .collection-bundle-header .slider-btn-list {
-    display: flex;
+    display: none;
     align-items: center;
     gap: 8px;
 }
