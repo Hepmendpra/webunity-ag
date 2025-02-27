@@ -396,7 +396,7 @@
         "block_ELdkY7"
       ],
       "settings": {
-        "background_color": "#fff",
+        "background_color": "#ffffff",
         "sub_heading": "🧐 Why Health & Fitness",
         "sub_heading_color": "#1b1f23",
         "sub_heading_size_desktop": 16,
@@ -406,7 +406,7 @@
         "heading_size_desktop": 40,
         "heading_size_mobile": 22,
         "short_note": "",
-        "short_note_color": "#000",
+        "short_note_color": "#000000",
         "short_note_desktop": 14,
         "short_note_mobile": 14,
         "padding_top_desktop": 80,
@@ -417,10 +417,78 @@
     },
     "video_with_product_4rTUqw": {
       "type": "video-with-product",
+      "blocks": {
+        "block_GH6cHm": {
+          "type": "block",
+          "settings": {
+            "video": "shopify://files/videos/892f479db18f4350ba1050251ed5ea37.HD-1080p-4.8Mbps-31942476.mp4",
+            "product": ""
+          }
+        },
+        "block_pRFM7t": {
+          "type": "block",
+          "settings": {
+            "video": "shopify://files/videos/b25a5ab1c3004cf78dc5ea8c1b0a98cf.HD-720p-1.6Mbps-28520932.mp4",
+            "product": ""
+          }
+        },
+        "block_rAJddE": {
+          "type": "block",
+          "settings": {
+            "video": "shopify://files/videos/892f479db18f4350ba1050251ed5ea37.HD-1080p-4.8Mbps-31942476.mp4",
+            "product": ""
+          }
+        },
+        "block_tiYb47": {
+          "type": "block",
+          "settings": {
+            "video": "shopify://files/videos/b25a5ab1c3004cf78dc5ea8c1b0a98cf.HD-720p-1.6Mbps-28520932.mp4",
+            "product": ""
+          }
+        },
+        "block_BwJNag": {
+          "type": "block",
+          "settings": {
+            "video": "shopify://files/videos/892f479db18f4350ba1050251ed5ea37.HD-1080p-4.8Mbps-31942476.mp4",
+            "product": ""
+          }
+        },
+        "block_nQcadc": {
+          "type": "block",
+          "settings": {
+            "video": "shopify://files/videos/b25a5ab1c3004cf78dc5ea8c1b0a98cf.HD-720p-1.6Mbps-28520932.mp4",
+            "product": ""
+          }
+        },
+        "block_CHj43H": {
+          "type": "block",
+          "settings": {
+            "video": "shopify://files/videos/892f479db18f4350ba1050251ed5ea37.HD-1080p-4.8Mbps-31942476.mp4",
+            "product": ""
+          }
+        },
+        "block_fMAdVt": {
+          "type": "block",
+          "settings": {
+            "video": "shopify://files/videos/b25a5ab1c3004cf78dc5ea8c1b0a98cf.HD-720p-1.6Mbps-28520932.mp4",
+            "product": ""
+          }
+        }
+      },
+      "block_order": [
+        "block_GH6cHm",
+        "block_pRFM7t",
+        "block_rAJddE",
+        "block_tiYb47",
+        "block_BwJNag",
+        "block_nQcadc",
+        "block_CHj43H",
+        "block_fMAdVt"
+      ],
       "settings": {
-        "background_color": "#fff",
+        "background_color": "#ffffff",
         "sub_heading": "Trusted & Proven by Science",
-        "sub_heading_color": "#000",
+        "sub_heading_color": "#000000",
         "sub_heading_size_desktop": 16,
         "sub_heading_size_mobile": 14,
         "heading": "Real People. Real Results.",
@@ -428,7 +496,7 @@
         "heading_size_desktop": 40,
         "heading_size_mobile": 22,
         "short_note": "<p><a href=\"/collections/all\" title=\"All products\">View All</a></p>",
-        "short_note_color": "#000",
+        "short_note_color": "#000000",
         "short_note_desktop": 16,
         "short_note_mobile": 14,
         "padding_top_desktop": 80,
