@@ -630,6 +630,14 @@
 .card-wrapper .card_tags {
   margin-bottom: 16px;
 }
+.card-wrapper .card_tags ul {
+  padding: 0;
+  list-style: unset;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 5px;
+}
 .card-wrapper .card_tags ul li {
   font-size: 11px;
   line-height: 1.2;
