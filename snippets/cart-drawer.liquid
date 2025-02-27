@@ -88,7 +88,7 @@
               {% if cart.total_price < 10000 %}
               <div class="progress_inner" style="width:{{final_result}}%;"></div>
               {% else %}
-              <div class="progress_inner" style="width:0%;"></div> 
+              <div class="progress_inner" style="width:100%;"></div> 
               {% endif %}
             </div>
           <span>{{10000 |  money}}</span>
@@ -109,6 +109,7 @@
             {%- if cart != empty -%}
               <div class="drawer__cart-items-wrapper">
                 <table class="cart-items" role="table">
+                  {% comment %}
                   <thead role="rowgroup">
                     <tr role="row">
                       <th id="CartDrawer-ColumnProductImage" role="columnheader">
@@ -135,7 +136,7 @@
                       </th>
                     </tr>
                   </thead>
-
+                  {% endcomment %}     
                   <tbody role="rowgroup">
                     {%- for item in cart.items -%}
                       <tr id="CartDrawer-Item-{{ item.index | plus: 1 }}" class="cart-item" role="row">
@@ -515,7 +516,7 @@
 
           <div class="totals" role="status">
             <h2 class="totals__total">{{ 'sections.cart.estimated_total' | t }}</h2>
-            <p class="totals__total-value">{{ cart.total_price | money_with_currency }}</p>
+            <p class="totals__total-value">{{ cart.total_price | money }}</p>
           </div>
 
           <small class="tax-note caption-large rte">
