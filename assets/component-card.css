@@ -777,6 +777,7 @@
   padding: 10px 10px 10px 35px;
   border: 1px solid #EEEEEE;
   position: relative;
+  cursor: pointer;
 }
 .card_subscription-plan fieldset label input {
   width: 0;
