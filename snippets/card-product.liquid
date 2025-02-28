@@ -626,7 +626,7 @@
 
           {% form 'product', card_product %}
           <fieldset>
-              <input id="{{card_product.id}}-0" type="radio" name="selling_plan-{{card_product.id}}-0" value="one-time">
+              <input id="{{card_product.id}}-0" type="radio" name="selling_plan-{{card_product.id}}" value="one-time">
               <label for="{{card_product.id}}-0">
                 <p>One-Time Purchase</p>
                 <div class="plan-info">
@@ -634,8 +634,9 @@
                 </div>
               </label>
             {% for group in card_product.selling_plan_groups %}
+
               {% for selling_plan in group.selling_plans %}
-                <input id="{{card_product.id}}-{{forloop.index}}" type="radio" name="selling_plan-{{card_product.id}}-{{forloop.index}}" value="{{ selling_plan.id }}">
+                <input id="{{card_product.id}}-{{forloop.index}}" type="radio" name="selling_plan-{{card_product.id}}" value="{{ selling_plan.id }}">
                 <label for="{{card_product.id}}-{{forloop.index}}">
                   <p>{{ selling_plan.name }}</p>
                   <div class="plan-info">
