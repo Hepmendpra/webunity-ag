@@ -486,7 +486,7 @@
 
       {% assign check_cart_prod =  %}
       {%- for item in cart.items -%}
-        {{item.product_id}}
+        {{item.product_id}}<br>
         {% assign check_cart_prod = check_cart_prod |  append: ',' |  append: item.product_id %}
       {%- endfor -%}
 
@@ -515,8 +515,9 @@
                     {%- for cart_item in settings.cart_collection.products -%}
                       <div class="cart-coll-item swiper-slide">
                         {%- if cart_item.id contains check_cart_prod -%}
+                          check - {{cart_item.id}}
                           {%- else -%}
-                        {{cart_item.id}}
+                       not- check - {{cart_item.id}}
                         {%- endif -%}
                       </div>
                     {%- endfor -%}
