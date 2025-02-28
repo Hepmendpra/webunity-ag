@@ -641,6 +641,9 @@ quantity-popover cart-remove-button .button {
 .cart_collection .cart-coll-header+.cart-coll-body {
   margin-top: 2rem;
 }
+.cart-coll-slider .cart-coll-item.swiper-slide {
+  width: 22rem;
+}
 
 
 

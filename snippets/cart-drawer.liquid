@@ -484,6 +484,11 @@
         </form>
       </cart-drawer-items>
 
+      {% assign check_cart_prod =  %}
+      {%- for item in cart.items -%}
+        {{item.product_id}}
+        {% assign check_cart_prod = check_cart_prod |  append: ',' |  append: item.product_id %}
+      {%- endfor -%}
 
       {%- if settings.show_cart_collection -%}
         {% if cart != empty %}
@@ -509,7 +514,10 @@
                   <div class="swiper-wrapper">
                     {%- for cart_item in settings.cart_collection.products -%}
                       <div class="cart-coll-item swiper-slide">
+                        {%- if cart_item.id contains check_cart_prod -%}
+                          {%- else -%}
                         {{cart_item.id}}
+                        {%- endif -%}
                       </div>
                     {%- endfor -%}
                   </div>
