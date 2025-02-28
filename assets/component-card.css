@@ -771,6 +771,15 @@
   flex-wrap: wrap;
 }
 .card_subscription-plan fieldset label {
-  width: calc(50% - 10px);
+  width: calc(50% - 10px - 47px);
   margin: 0 5px;
+  background: #F6F6F5;
+  padding: 10px 10px 10px 35px;
+  border: 1px solid #EEEEEE;
+}
+.card_subscription-plan fieldset label input {
+  width: 0;
+  height: 0;
+  visibility: hidden;
+  opacity: 0;
 }
