@@ -168,6 +168,7 @@
         "text_TDnpKq",
         "text_YXQEbV"
       ],
+      "disabled": true,
       "settings": {
         "BgColor": "#000000",
         "Color": "#ffffff",
@@ -239,6 +240,7 @@
         "slide_GDFH3J",
         "slide_yyXL73"
       ],
+      "disabled": true,
       "settings": {
         "PaddingTopDesk": 24,
         "PaddingBottomDesk": 24,
@@ -309,6 +311,7 @@
         "block_EKypdw",
         "block_cqpXQz"
       ],
+      "disabled": true,
       "settings": {
         "sub_heading": "COMFORTABLY UNCOMFORTABLE",
         "sub_heading_color": "#000000",
@@ -330,6 +333,7 @@
     },
     "featured_collection_slider_Th4NAe": {
       "type": "featured-collection-slider",
+      "disabled": true,
       "settings": {
         "background_color": "#f6f6f5",
         "sub_heading": "🌟 Trending",
@@ -395,6 +399,7 @@
         "block_7UGGQE",
         "block_ELdkY7"
       ],
+      "disabled": true,
       "settings": {
         "background_color": "#ffffff",
         "sub_heading": "🧐 Why Health & Fitness",
@@ -485,6 +490,7 @@
         "block_CHj43H",
         "block_fMAdVt"
       ],
+      "disabled": true,
       "settings": {
         "background_color": "#f6f6f5",
         "sub_heading": "Trusted & Proven by Science",
@@ -527,10 +533,11 @@
         "collection_LdErkH",
         "collection_K6hiae"
       ],
+      "disabled": true,
       "settings": {
-        "background_color": "#fff",
+        "background_color": "#ffffff",
         "sub_heading": "📦 Goals Specific",
-        "sub_heading_color": "#000",
+        "sub_heading_color": "#000000",
         "sub_heading_size_desktop": 16,
         "sub_heading_size_mobile": 14,
         "heading": "Bundles",
@@ -605,6 +612,7 @@
         "slide_RJyHne",
         "slide_MjEKxR"
       ],
+      "disabled": true,
       "settings": {
         "background": "#F6F6F5",
         "subheading": "Simple & Effective Ingredients",
@@ -655,6 +663,7 @@
         "text_LiKaBD",
         "buttons_KRXTE8"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify://shop_images/Rectangle_478.png",
         "image_overlay_opacity": 10,
@@ -675,6 +684,7 @@
     },
     "featured_blog_latest_C9wkCy": {
       "type": "featured-blog-latest",
+      "disabled": true,
       "settings": {
         "subheading": "✍️ Blogs",
         "subheadingfont_size": 16,
