@@ -723,13 +723,13 @@
   background: #fff;
   z-index: 1;
   padding: 20px;
-  transform: translateY(100%);
+  /* transform: translateY(100%); */
   transition: all 0.3s ease;
 }
-.product-card-wrapper:hover .card_subscription-info {
+/* .product-card-wrapper:hover .card_subscription-info {
   transform: translateY(0);
   transition: all 0.3s ease;
-}
+} */
 .card_subscription-info .quick-add__submit {
   width: 100%;
   padding: 5px;

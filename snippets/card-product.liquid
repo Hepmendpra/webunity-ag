@@ -640,27 +640,14 @@
                   <p>{{ selling_plan.name }}</p>
                   <div class="plan-info">
                     <span class="item-price">{{card_product.selected_or_first_available_selling_plan_allocation.checkout_charge_amount | money }}</span>
-                    <span class="item-discount">{{card_product.selected_or_first_available_selling_plan_allocation.selling_plan.name |  split: ',' | last |  split: 'off'}}</span>
+                    <span class="item-discount">Save {{card_product.selected_or_first_available_selling_plan_allocation.selling_plan.name |  split: ',' | last |  split: 'off'}}</span>
                   </div>
                 </label>
               {% endfor %}
             {% endfor %}
           </fieldset>
           {% endform %}
-
-            <ul>
-              <li>
-                <label  class="one-time-purchase">
-                  <input type="radio" id="{{card_product.id}}-1" value="one-time">
-                  <div class="plan-info">
-                    <p>One-Time Purchase</p>
-                    <div class="plan-deatils">
-                      <span class="item-price">{{product.selected_or_first_available_variant.price | money }}</span>
-                    </div>
-                  </div>
-                </label>
-              </li>
-            </ul>
+ 
           </div>
           <div class="card-product-form">
             {% assign product_form_id = 'quick-add-' | append: section_id | append: card_product.id %}
