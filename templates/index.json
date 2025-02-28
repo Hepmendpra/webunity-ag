@@ -395,6 +395,7 @@
         "block_7UGGQE",
         "block_ELdkY7"
       ],
+      "disabled": true,
       "settings": {
         "background_color": "#ffffff",
         "sub_heading": "🧐 Why Health & Fitness",
@@ -485,6 +486,7 @@
         "block_CHj43H",
         "block_fMAdVt"
       ],
+      "disabled": true,
       "settings": {
         "background_color": "#f6f6f5",
         "sub_heading": "Trusted & Proven by Science",
