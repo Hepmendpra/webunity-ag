@@ -561,9 +561,9 @@
         "collection_K6hiae"
       ],
       "settings": {
-        "background_color": "#fff",
+        "background_color": "#ffffff",
         "sub_heading": "📦 Goals Specific",
-        "sub_heading_color": "#000",
+        "sub_heading_color": "#000000",
         "sub_heading_size_desktop": 16,
         "sub_heading_size_mobile": 14,
         "heading": "Bundles",

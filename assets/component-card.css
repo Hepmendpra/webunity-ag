@@ -760,3 +760,75 @@
   letter-spacing: 0;
   font-weight: 400;
 }
+.card_subscription-plan {
+  margin-bottom: 10px;
+}
+.card_subscription-plan fieldset {
+  padding: 0;
+  border: 0;
+  margin: 0 -5px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.card_subscription-plan fieldset label {
+  width: calc(50% - 10px - 47px);
+  margin: 0 5px;
+  background: #F6F6F5;
+  padding: 10px 10px 10px 35px;
+  border: 1px solid #EEEEEE;
+  position: relative;
+  cursor: pointer;
+}
+.card_subscription-plan fieldset label input {
+  width: 0;
+  height: 0;
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+}
+.card_subscription-plan fieldset label span.check-input {
+  width: 16px;
+  height: 16px;
+  display: block;
+  border: 1px solid #1B1F23;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.card_subscription-plan fieldset label input:checked+span.check-input:after {
+  content: "";
+  position: absolute;
+  background: #000;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.card_subscription-plan fieldset label p {
+  margin: 0 0 4px 0;
+  font-size: 12px;
+  line-height: 1.2;
+  letter-spacing: 0;
+  color: #1B1F23;
+  font-weight: 400;
+}
+.card_subscription-plan fieldset .plan-info {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 5px;
+}
+.card_subscription-plan fieldset .plan-info span {
+  font-size: 12px;
+  line-height: 1.2;
+  display: inline-flex;
+  color: #1B1F23;
+  font-weight: 500;
+}
+.card_subscription-plan fieldset .plan-info span.item-discount {
+  font-size: 11px;
+  color: #802608;
+}

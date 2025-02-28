@@ -96,7 +96,11 @@
     line-height: 1.2;
     letter-spacing: 0;
 }
-
+.collection-bundle-header .slider-btn-list>* svg {
+    width: 100%;
+    height: 100%;
+    padding: 12px;
+}
 @media(max-width:749px){
     .collection-bundle-header {
         grid-template-columns: 1fr;

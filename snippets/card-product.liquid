@@ -621,7 +621,44 @@
         </div>
       </div>
 
+      {% if card_product.selling_plan_groups != blank %}
       <div class="card_subscription-info">
+
+      
+          <div class="card_subscription-plan">
+
+          {% form 'product', card_product %}
+          <fieldset>
+             
+              <label for="{{card_product.id}}-0">
+                <input id="{{card_product.id}}-0" type="radio" name="selling_plan-{{card_product.id}}" value="one-time" data-price="{{card_product.selected_or_first_available_variant.price | money }}">
+                <span class="check-input"></span>
+                <p>One-Time Purchase</p>
+                <div class="plan-info">
+                  <span class="item-price">{{card_product.selected_or_first_available_variant.price | money }}</span>
+                </div>
+              </label>
+            {% for group in card_product.selling_plan_groups %}
+
+              {% for selling_plan in group.selling_plans %}
+                
+                <label for="{{card_product.id}}-{{forloop.index}}">
+                  <input id="{{card_product.id}}-{{forloop.index}}" {% if forloop.first %}checked="checked"{%endif%} type="radio" name="selling_plan-{{card_product.id}}" value="{{ selling_plan.id }}" data-price="{{card_product.selected_or_first_available_selling_plan_allocation.checkout_charge_amount | money }}">
+                  <span class="check-input"></span>
+                  <p>{{ group.name }}</p>
+                  <div class="plan-info">
+                    <span class="item-price">{{card_product.selected_or_first_available_selling_plan_allocation.checkout_charge_amount | money }}</span>
+                    <span class="item-discount">Save {{card_product.selected_or_first_available_selling_plan_allocation.selling_plan.name |  split: ',' | last |  split: 'off'}}</span>
+                  </div>
+                </label> 
+              {% endfor %}
+            {% endfor %}
+          </fieldset>
+          {% endform %}
+ 
+          </div>
+        
+
           <div class="card-product-form">
             {% assign product_form_id = 'quick-add-' | append: section_id | append: card_product.id %}
             <product-form data-section-id="{{ section.id }}">
@@ -656,7 +693,8 @@
                 >
                   <span>
                     {%- if card_product.selected_or_first_available_variant.available -%}
-                      Add to Cart - {{card_product.selected_or_first_available_variant.price | money }}
+                      Add to Cart - 
+                      <span class="selling-plan-price">{{card_product.selected_or_first_available_selling_plan_allocation.checkout_charge_amount | money }}</span>
                     {%- else -%}
                       {{ 'products.product.sold_out' | t }}
                     {%- endif -%}
@@ -671,6 +709,9 @@
                   {%- endif -%}
                   {%- render 'loading-spinner' -%}
                 </button>
+                {% if card_product.selling_plan_groups != blank %}
+                <input name="selling_plan" class="selected-selling-plan-id" type="hidden" value="{{card_product.selected_or_first_available_selling_plan_allocation.selling_plan.id}}">
+                {%- endif -%}
               {%- endform -%}
             </product-form>
           </div>
@@ -678,6 +719,7 @@
               <a href="{{card_product.url}}">View Full Details</a>
           </div>
       </div>
+    {% endif %}
 
     </div>
   </div>
