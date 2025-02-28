@@ -621,7 +621,11 @@
         </div>
       </div>
 
+
       <div class="card_subscription-info">
+        {{card_product.selling_plan_groups}}
+
+      {% if card_product.selling_plan_groups != blank %}
           <div class="card_subscription-plan">
 
           {% form 'product', card_product %}
@@ -640,20 +644,22 @@
               {% for selling_plan in group.selling_plans %}
                 
                 <label for="{{card_product.id}}-{{forloop.index}}">
-              <input id="{{card_product.id}}-{{forloop.index}}" {% if forloop.first %}checked="checked"{%endif%} type="radio" name="selling_plan-{{card_product.id}}" value="{{ selling_plan.id }}">
+                  <input id="{{card_product.id}}-{{forloop.index}}" {% if forloop.first %}checked="checked"{%endif%} type="radio" name="selling_plan-{{card_product.id}}" value="{{ selling_plan.id }}">
                   <span class="check-input"></span>
                   <p>{{ group.name }}</p>
                   <div class="plan-info">
                     <span class="item-price">{{card_product.selected_or_first_available_selling_plan_allocation.checkout_charge_amount | money }}</span>
                     <span class="item-discount">Save {{card_product.selected_or_first_available_selling_plan_allocation.selling_plan.name |  split: ',' | last |  split: 'off'}}</span>
                   </div>
-                </label>
+                </label> 
               {% endfor %}
             {% endfor %}
           </fieldset>
           {% endform %}
  
           </div>
+        {% endif %}
+
           <div class="card-product-form">
             {% assign product_form_id = 'quick-add-' | append: section_id | append: card_product.id %}
             <product-form data-section-id="{{ section.id }}">
