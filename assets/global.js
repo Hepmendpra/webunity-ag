@@ -1363,8 +1363,10 @@ input_list.forEach(function(em){
     var _this = item.target;
     var data_val = _this.getAttribute('value');
     if(data_val == 'one-time'){
+      _this.closest('.card_subscription-info').querySelector('.selling-plan-price').innerHTML = _this.getAttribute('data-price');
       _this.closest('.card_subscription-info').querySelector('.selected-selling-plan-id').removeAttribute('value');
     }else{
+      _this.closest('.card_subscription-info').querySelector('.selling-plan-price').innerHTML = _this.getAttribute('data-price');
       _this.closest('.card_subscription-info').querySelector('.selected-selling-plan-id').setAttribute('value',data_val);
     }
   });
