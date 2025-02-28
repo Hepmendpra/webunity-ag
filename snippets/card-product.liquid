@@ -640,7 +640,7 @@
               {% for selling_plan in group.selling_plans %}
                 
                 <label for="{{card_product.id}}-{{forloop.index}}">
-                  <input id="{{card_product.id}}-{{forloop.index}}" type="radio" name="selling_plan-{{card_product.id}}" value="{{ selling_plan.id }}">
+              <input id="{{card_product.id}}-{{forloop.index}}" {% if forloop.first %}checked="checked"{%endif%} type="radio" name="selling_plan-{{card_product.id}}" value="{{ selling_plan.id }}">
                   <span class="check-input"></span>
                   <p>{{ group.name }}</p>
                   <div class="plan-info">
