@@ -1465,6 +1465,20 @@
       },
       {
         "type": "header",
+        "content": "Cart collection"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_cart_collection",
+        "label": "Show collection"
+      },
+      {
+        "type": "collection",
+        "id": "cart_collection",
+        "label": "Collection"
+      },
+      {
+        "type": "header",
         "content": "t:settings_schema.cart.settings.cart_drawer.header"
       },
       {

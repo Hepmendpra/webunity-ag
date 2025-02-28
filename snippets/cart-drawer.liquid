@@ -483,6 +483,41 @@
         </form>
       </cart-drawer-items>
 
+      {%- if settings.show_cart_collection -%}
+        {% if cart != empty %}
+          <div class="cart_collection">
+            <div class="cart-coll-header">
+              {% if settings.cart_heading != blank %}
+                <h2>{{settings.cart_heading}}</h2>  
+              {% endif %}
+              <div class="cart_coll-arrows">
+                <div class="button-prev-wrap">
+                    {{- 'prev-arrow-icon.svg' | inline_asset_content -}}
+                </div>
+                <div class="button-next-wrap">
+                    {{- 'next-arrow-icon.svg' | inline_asset_content -}}
+                </div>
+              </div>
+            </div>
+
+            <div class="cart-coll-body">
+                <div class="cart-coll-slider swiper">
+                  <div class="swiper-button-prev" style="display:none;"></div>
+                  <div class="swiper-button-next" style="display:none;"></div>
+                  <div class="swiper-wrapper">
+                    {%- for product in settings.cart_collection.products -%}
+                      <div class="cart-coll-item swiper-slide">
+
+                      </div>
+                    {%- endfor -%}
+                  </div>
+                </div>
+            </div>
+
+          </div>
+        {%- endif -%}
+      {%- endif -%}
+
       {% comment %}
       {% if settings.show_product_recommendations %}
         {% if cart != empty %}
@@ -510,6 +545,8 @@
         {% endif %}
       {% endif %}
       {% endcomment %}
+
+
 
       <div class="drawer__footer">
         {%- if settings.show_cart_note -%}
