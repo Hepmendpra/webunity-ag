@@ -624,7 +624,6 @@
 
       <div class="card_subscription-info">
 
-      {% if card_product.selling_plan != blank %}
           <div class="card_subscription-plan">
 
           {% form 'product', card_product %}
@@ -667,7 +666,6 @@
           {% endform %}
  
           </div>
-        {% endif %}
 
           <div class="card-product-form">
             {% assign product_form_id = 'quick-add-' | append: section_id | append: card_product.id %}
