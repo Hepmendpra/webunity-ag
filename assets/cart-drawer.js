@@ -87,6 +87,7 @@ class CartDrawer extends HTMLElement {
       this.querySelector('#CartDrawer-Overlay').addEventListener('click', this.close.bind(this));
       this.open();
     });
+    cart_collection_slider();
   }
 
   getSectionInnerHTML(html, selector = '.shopify-section') {
