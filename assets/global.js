@@ -240,7 +240,7 @@ class QuantityInput extends HTMLElement {
 
   onInputChange(event) {
     this.validateQtyRules();
-    recommendedpr();
+    // recommendedpr();
   }
 
   onButtonClick(event) {
@@ -265,7 +265,7 @@ class QuantityInput extends HTMLElement {
 
     if (this.input.dataset.min === previousValue && event.target.name === 'minus') {
       this.input.value = parseInt(this.input.min);
-      recommendedpr();
+      // recommendedpr();
     }
     
   }
