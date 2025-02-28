@@ -126,6 +126,7 @@
     "show_vendor": false,
     "show_cart_note": false,
     "show_cart_collection": true,
+    "cart_heading": "Enhance Your Performance",
     "cart_collection": "frontpage",
     "cart_drawer_collection": "",
     "cart_color_scheme": "scheme-1",
