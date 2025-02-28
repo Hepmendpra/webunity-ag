@@ -395,7 +395,6 @@
         "block_7UGGQE",
         "block_ELdkY7"
       ],
-      "disabled": true,
       "settings": {
         "background_color": "#ffffff",
         "sub_heading": "🧐 Why Health & Fitness",
@@ -486,7 +485,6 @@
         "block_CHj43H",
         "block_fMAdVt"
       ],
-      "disabled": true,
       "settings": {
         "background_color": "#f6f6f5",
         "sub_heading": "Trusted & Proven by Science",
@@ -529,7 +527,6 @@
         "collection_LdErkH",
         "collection_K6hiae"
       ],
-      "disabled": true,
       "settings": {
         "background_color": "#ffffff",
         "sub_heading": "📦 Goals Specific",
@@ -608,7 +605,6 @@
         "slide_RJyHne",
         "slide_MjEKxR"
       ],
-      "disabled": true,
       "settings": {
         "background": "#F6F6F5",
         "subheading": "Simple & Effective Ingredients",
@@ -659,7 +655,6 @@
         "text_LiKaBD",
         "buttons_KRXTE8"
       ],
-      "disabled": true,
       "settings": {
         "image": "shopify://shop_images/Rectangle_478.png",
         "image_overlay_opacity": 10,
@@ -680,7 +675,6 @@
     },
     "featured_blog_latest_C9wkCy": {
       "type": "featured-blog-latest",
-      "disabled": true,
       "settings": {
         "subheading": "✍️ Blogs",
         "subheadingfont_size": 16,
