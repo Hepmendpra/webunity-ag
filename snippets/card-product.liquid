@@ -624,7 +624,7 @@
 
       <div class="card_subscription-info">
 
-      {% if card_product.selling_plan_groups != blank %}
+      {% if card_product.selling_plan != blank %}
           <div class="card_subscription-plan">
 
           {% form 'product', card_product %}
@@ -638,20 +638,30 @@
                   <span class="item-price">{{card_product.selected_or_first_available_variant.price | money }}</span>
                 </div>
               </label>
-            {% for group in card_product.selling_plan_groups %}
-
-              {% for selling_plan in group.selling_plans %}
+            {% for group in card_product.selling_plan %}
+              <label for="{{card_product.id}}-{{forloop.index}}">
+                <input id="{{card_product.id}}-{{forloop.index}}" {% if forloop.first %}checked="checked"{%endif%} type="radio" name="selling_plan-{{card_product.id}}" value="{{ group.id }}">
+                <span class="check-input"></span>
+                <p>{{ group.name }}</p>
+                <div class="plan-info">
+                  <span class="item-price"></span>
+                  <span class="item-discount">Save {{group.checkout_charge.value }} %</span>
+                </div>
+              </label>
+              {% comment %}
+              {% for selling_plan in card_product.selling_plan_allocation %}
                 
                 <label for="{{card_product.id}}-{{forloop.index}}">
                   <input id="{{card_product.id}}-{{forloop.index}}" {% if forloop.first %}checked="checked"{%endif%} type="radio" name="selling_plan-{{card_product.id}}" value="{{ selling_plan.id }}">
                   <span class="check-input"></span>
                   <p>{{ group.name }}</p>
                   <div class="plan-info">
-                    <span class="item-price">{{card_product.selected_or_first_available_selling_plan_allocation.checkout_charge_amount | money }}</span>
+                    <span class="item-price">{{selling_plan.price | money }}</span>
                     <span class="item-discount">Save {{card_product.selected_or_first_available_selling_plan_allocation.selling_plan.name |  split: ',' | last |  split: 'off'}}</span>
                   </div>
                 </label> 
               {% endfor %}
+              {% endcomment %}
             {% endfor %}
           </fieldset>
           {% endform %}
@@ -693,7 +703,8 @@
                 >
                   <span>
                     {%- if card_product.selected_or_first_available_variant.available -%}
-                      Add to Cart - {{card_product.selected_or_first_available_variant.price | money }}
+                      Add to Cart - 
+                      <span class="selling-plan-price">{{card_product.selected_or_first_available_variant.price | money }}</span>
                     {%- else -%}
                       {{ 'products.product.sold_out' | t }}
                     {%- endif -%}
