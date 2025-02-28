@@ -86,7 +86,7 @@ class CartDrawer extends HTMLElement {
     setTimeout(() => {
       this.querySelector('#CartDrawer-Overlay').addEventListener('click', this.close.bind(this));
       this.open();
-      cart_collection_slider();
+      
     });
     
   }
