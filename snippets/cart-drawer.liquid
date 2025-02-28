@@ -74,6 +74,8 @@
           </span>
         </button>
       </div>
+
+      {%- if cart != empty -%}
       <div class="drawer-progess-bar">
         {% if cart.total_price < 10000 %}
          <p class="remaing-range">You are <span>{{ 10000 |  minus: cart.total_price | money }}</span> away from eligible for free shipping</p>
@@ -94,6 +96,8 @@
           <span>{{10000 |  money}}</span>
          </div>
       </div>
+      {%- endif -%}
+
       <cart-drawer-items
         {% if cart == empty %}
           class=" is-empty"
