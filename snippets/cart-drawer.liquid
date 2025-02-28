@@ -479,6 +479,7 @@
         </form>
       </cart-drawer-items>
 
+      {% comment %}
       {% if settings.show_product_recommendations %}
         {% if cart != empty %}
           <div class="mini-cart-recommendation">
@@ -504,6 +505,7 @@
           </div>
         {% endif %}
       {% endif %}
+      {% endcomment %}
 
       <div class="drawer__footer">
         {%- if settings.show_cart_note -%}
