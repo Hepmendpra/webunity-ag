@@ -709,7 +709,7 @@
                   {%- render 'loading-spinner' -%}
                 </button>
                 {% if card_product.selling_plan_groups != blank %}
-                <input name="selling_plan" class="selected-selling-plan-id" type="hidden" value="{{card_product.selected_or_first_available_selling_plan_allocation.selling_plan_group_id}}">
+                <input name="selling_plan" class="selected-selling-plan-id" type="hidden" value="{{card_product.selected_or_first_available_selling_plan_allocation.selling_plan.id}}">
                 {%- endif -%}
               {%- endform -%}
             </product-form>
