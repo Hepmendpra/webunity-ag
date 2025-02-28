@@ -1473,6 +1473,12 @@
         "label": "Show collection"
       },
       {
+        "type": "text",
+        "id": "cart_heading",
+        "label": "Heading",
+        "default": "You me also link"
+      },
+      {
         "type": "collection",
         "id": "cart_collection",
         "label": "Collection"

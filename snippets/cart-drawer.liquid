@@ -469,6 +469,7 @@
                           </quantity-popover>
                         </td>
                       </tr>
+
                     {%- endfor -%}
                   </tbody>
                 </table>
@@ -482,6 +483,7 @@
           <div id="CartDrawer-CartErrors" role="alert"></div>
         </form>
       </cart-drawer-items>
+
 
       {%- if settings.show_cart_collection -%}
         {% if cart != empty %}
@@ -505,9 +507,9 @@
                   <div class="swiper-button-prev" style="display:none;"></div>
                   <div class="swiper-button-next" style="display:none;"></div>
                   <div class="swiper-wrapper">
-                    {%- for product in settings.cart_collection.products -%}
+                    {%- for cart_item in settings.cart_collection.products -%}
                       <div class="cart-coll-item swiper-slide">
-
+                        {{cart_item.id}}
                       </div>
                     {%- endfor -%}
                   </div>

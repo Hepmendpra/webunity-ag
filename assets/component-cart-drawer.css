@@ -526,7 +526,7 @@ cart-drawer-items::-webkit-scrollbar-track-piece {
   content: none;
 }
 cart-drawer-items {
-  padding: 0 3rem;
+  padding: 0 3rem 3rem;
 }
 .cart-drawer .drawer__cart-items-wrapper table {
   background: #F6F6F5;
