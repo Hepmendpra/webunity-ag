@@ -630,8 +630,8 @@
           {% form 'product', card_product %}
           <fieldset>
              
-              <label for="{{card_product.id}}-0">
-                <input id="{{card_product.id}}-0" type="radio" name="selling_plan-{{card_product.id}}" value="one-time" data-price="{{card_product.selected_or_first_available_variant.price | money }}">
+              <label for="{{section_id}}-{{card_product.id}}-0">
+                <input id="{{section_id}}-{{card_product.id}}-0" type="radio" name="selling_plan-{{card_product.id}}" value="one-time" data-price="{{card_product.selected_or_first_available_variant.price | money }}">
                 <span class="check-input"></span>
                 <p>One-Time Purchase</p>
                 <div class="plan-info">
@@ -642,8 +642,8 @@
 
               {% for selling_plan in group.selling_plans %}
                 
-                <label for="{{card_product.id}}-{{forloop.index}}">
-                  <input id="{{card_product.id}}-{{forloop.index}}" {% if forloop.first %}checked="checked"{%endif%} type="radio" name="selling_plan-{{card_product.id}}" value="{{ selling_plan.id }}" data-price="{{card_product.selected_or_first_available_selling_plan_allocation.checkout_charge_amount | money }}">
+                <label for="{{section_id}}-{{card_product.id}}-{{forloop.index}}">
+                  <input id="{{section_id}}-{{card_product.id}}-{{forloop.index}}" {% if forloop.first %}checked="checked"{%endif%} type="radio" name="selling_plan-{{card_product.id}}" value="{{ selling_plan.id }}" data-price="{{card_product.selected_or_first_available_selling_plan_allocation.checkout_charge_amount | money }}">
                   <span class="check-input"></span>
                   <p>{{ group.name }}</p>
                   <div class="plan-info">

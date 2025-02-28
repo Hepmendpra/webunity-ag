@@ -469,6 +469,7 @@
                           </quantity-popover>
                         </td>
                       </tr>
+
                     {%- endfor -%}
                   </tbody>
                 </table>
@@ -483,33 +484,114 @@
         </form>
       </cart-drawer-items>
 
-      {% comment %}
-      {% if settings.show_product_recommendations %}
+      {% assign check_cart_prod =  %}
+      {%- for item in cart.items -%}
+        {% assign check_cart_prod = check_cart_prod |  append: ',' |  append: item.product_id %}
+      {%- endfor -%}
+
+      {%- if settings.show_cart_collection -%}
         {% if cart != empty %}
-          <div class="mini-cart-recommendation">
-            <div class="mini-cart-recommendation-head">
-              <h2 class="recommendation-inner-text">{{ settings.title }}</h2>
-              <div class="recommendation-inner-btn">
-                <div class="swiper-button-prev swiper-button-prev--{{ section.id }}">
-                  {{- 'prev-arrow-icon.svg' | inline_asset_content -}}
+          <div class="cart_collection">
+            <div class="cart-coll-header">
+              {% if settings.cart_heading != blank %}
+                <h2>{{settings.cart_heading}}</h2>  
+              {% endif %}
+              <div class="cart_coll-arrows">
+                <div class="button-prev-wrap">
+                    {{- 'prev-arrow-icon.svg' | inline_asset_content -}}
                 </div>
-                <div class="swiper-button-next swiper-button-next--{{ section.id }}">
-                  {{- 'next-arrow-icon.svg' | inline_asset_content -}}
+                <div class="button-next-wrap">
+                    {{- 'next-arrow-icon.svg' | inline_asset_content -}}
                 </div>
               </div>
             </div>
-            <div
-              class="recommended-product"
-              data-id="/recommendations/products.json?product_id={{ cart.items[0].product_id }}"
-            >
-              <div class="recommended-product-main swiper">
-                <div class="swiper-wrapper"></div>
-              </div>
+
+            <div class="cart-coll-body">
+                <div class="cart-coll-slider swiper">
+                  <div class="swiper-button-prev" style="display:none;"></div>
+                  <div class="swiper-button-next" style="display:none;"></div>
+                  <div class="swiper-wrapper">
+                    {%- for cart_item in settings.cart_collection.products -%}
+                      <div class="cart-coll-item swiper-slide">
+                       <div class="cart-coll-item-info">
+                          <div class="item-image-wrapp">
+                            {{
+                              cart_item.featured_image  
+                              | image_url: width: 350
+                              | image_tag: widths: '150,200,250,300,350', fetchpriority: "auto"
+                            }}
+                          </div>
+                          <div class="item-content"> 
+                            <h4 class="item-title">{{cart_item.title}}</h4>
+                            <div class="item-price-atc">
+                              <span class="item-price">{{cart_item.price | money}}</span>
+                              {% assign product_form_id = 'quick-add-' | append: section.id | append: card_product.id %}
+                              <product-form data-section-id="{{ section.id }}">
+                                {%- form 'product',
+                                  cart_item,
+                                  id: product_form_id,
+                                  class: 'form',
+                                  novalidate: 'novalidate',
+                                  data-type: 'add-to-cart-form'
+                                -%}
+                                  <input
+                                    type="hidden"
+                                    name="id"
+                                    value="{{ cart_item.selected_or_first_available_variant.id }}"
+                                    class="product-variant-id"
+                                    {% if cart_item.selected_or_first_available_variant.available == false %}
+                                      disabled
+                                    {% endif %}
+                                  >
+                                  <button
+                                    id="{{ product_form_id }}-submit"
+                                    type="submit"
+                                    name="add"
+                                    class="quick-add__submit button button--full-width button--secondary{% if horizontal_quick_add %} card--horizontal__quick-add{% endif %}"
+                                    aria-haspopup="dialog"
+                                    aria-labelledby="{{ product_form_id }}-submit title-{{ section_id }}-{{ cart_item.id }}"
+                                    aria-live="polite"
+                                    data-sold-out-message="true"
+                                    {% if cart_item.selected_or_first_available_variant.available == false %}
+                                      disabled
+                                    {% endif %}
+                                  >
+                                    <span>
+                                      {%- if cart_item.selected_or_first_available_variant.available -%}
+                                        Add to Cart +
+                                      {%- else -%}
+                                        {{ 'products.product.sold_out' | t }}
+                                      {%- endif -%}
+                                    </span>
+                                    <span class="sold-out-message hidden">
+                                      {{ 'products.product.sold_out' | t }}
+                                    </span>
+                                    {%- if horizontal_quick_add -%}
+                                      <span class="icon-wrap">
+                                        {{- 'icon-plus.svg' | inline_asset_content -}}
+                                      </span>
+                                    {%- endif -%}
+                                    {%- render 'loading-spinner' -%}
+                                  </button>
+                                  {% if cart_item.selling_plan_groups != blank %}
+                                  <input name="selling_plan" class="selected-selling-plan-id" type="hidden" value="{{cart_item.selected_or_first_available_selling_plan_allocation.selling_plan.id}}">
+                                  {%- endif -%}
+                                {%- endform -%}
+                              </product-form>
+                            </div>
+                          </div>
+                       </div>
+                      </div>
+                    {%- endfor -%}
+                  </div>
+                </div>
             </div>
+
           </div>
-        {% endif %}
-      {% endif %}
-      {% endcomment %}
+        {%- endif -%}
+      {%- endif -%}
+
+
 
       <div class="drawer__footer">
         {%- if settings.show_cart_note -%}
