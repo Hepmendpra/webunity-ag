@@ -602,7 +602,7 @@ quantity-popover cart-remove-button .button {
 }
 
 .cart_collection {
-  padding: 0 3rem 3rem;
+  padding: 1.5rem 3rem 3rem;
 }
 .cart_collection .cart-coll-header {
   display: flex;
