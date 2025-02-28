@@ -632,6 +632,7 @@ quantity-popover cart-remove-button .button {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 .cart_collection .cart-coll-header .cart_coll-arrows>* svg {
   width: 100%;
