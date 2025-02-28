@@ -257,6 +257,10 @@ class QuantityInput extends HTMLElement {
       this.input.stepDown();
     }
 
+    if(parseInt(this.input.value) == 0){
+      this.closest('quantity-popover').querySelector('cart-remove-button').dispatchEvent(new Event('click'));
+    }
+
     if (previousValue !== this.input.value) this.input.dispatchEvent(this.changeEvent);
 
     if (this.input.dataset.min === previousValue && event.target.name === 'minus') {
