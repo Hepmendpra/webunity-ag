@@ -760,3 +760,17 @@
   letter-spacing: 0;
   font-weight: 400;
 }
+.card_subscription-plan {
+  margin-bottom: 10px;
+}
+.card_subscription-plan fieldset {
+  padding: 0;
+  border: 0;
+  margin: 0 -5px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.card_subscription-plan fieldset label {
+  width: calc(50% - 10px);
+  margin: 0 5px;
+}
