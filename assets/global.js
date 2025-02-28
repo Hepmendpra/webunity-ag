@@ -266,6 +266,7 @@ class QuantityInput extends HTMLElement {
       this.input.value = parseInt(this.input.min);
       
     }
+    cart_collection_slider();
     
   }
 
