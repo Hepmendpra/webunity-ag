@@ -638,7 +638,7 @@
               {% for selling_plan in group.selling_plans %}
                 <input id="{{card_product.id}}-{{forloop.index}}" type="radio" name="selling_plan-{{card_product.id}}" value="{{ selling_plan.id }}">
                 <label for="{{card_product.id}}-{{forloop.index}}">
-                  <p>{{ selling_plan.name }}</p>
+                  <p>{{ group.name }}</p>
                   <div class="plan-info">
                     <span class="item-price">{{card_product.selected_or_first_available_selling_plan_allocation.checkout_charge_amount | money }}</span>
                     <span class="item-discount">Save {{card_product.selected_or_first_available_selling_plan_allocation.selling_plan.name |  split: ',' | last |  split: 'off'}}</span>
