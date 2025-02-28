@@ -136,6 +136,8 @@ class CartDrawerItems extends CartItems {
 customElements.define('cart-drawer-items', CartDrawerItems);
 
 
+function cart_collection_slider(){
+
 var swiper = new Swiper(".cart_collection .cart-coll-slider", {
   slidesPerView: "auto",
   spaceBetween: 12,
@@ -144,3 +146,32 @@ var swiper = new Swiper(".cart_collection .cart-coll-slider", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+
+var prev_btn = document.querySelector('.cart_coll-arrows .button-prev-wrap');
+var next_btn = document.querySelector('.cart_coll-arrows .button-next-wrap');
+
+prev_btn.addEventListener("click", function (item) {
+    var _this = item.target;
+    if (_this.classList.contains("button-prev-wrap")){
+        var _this_prev_btn = _this.target;
+    }else{
+        var _this_prev_btn = _this.closest('.button-prev-wrap');
+    }
+    var _this_prev_btn = _this_prev_btn.closest('.cart_collection').querySelector('.cart-coll-body').querySelector('.swiper-button-prev');
+    _this_prev_btn.dispatchEvent(new Event('click'));
+});
+
+next_btn.addEventListener("click", function (item) {
+    var _this = item.target;
+    if (_this.classList.contains("button-next-wrap")){
+        var _this_next_btn = _this.target;
+    }else{
+        var _this_next_btn = _this.closest('.button-next-wrap');
+    }
+    var _this_next_btn = _this_next_btn.closest('.cart_collection').querySelector('.cart-coll-body').querySelector('.swiper-button-next');
+    _this_next_btn.dispatchEvent(new Event('click'));
+});
+}
+
+cart_collection_slider();
