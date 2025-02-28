@@ -6,7 +6,6 @@ class CartRemoveButton extends HTMLElement {
       event.preventDefault();
       const cartItems = this.closest('cart-items') || this.closest('cart-drawer-items');
       cartItems.updateQuantity(this.dataset.index, 0);
-      // recommendedpr();
     });
   }
 }
@@ -286,83 +285,3 @@ if (!customElements.get('cart-note')) {
   );
 }
 
-
-
-// function recommendedpr() {
-//   var getid = document.querySelector('.recommended-product').getAttribute('data-id');
-
-//   fetch(getid)
-//     .then(response => response.json())
-//     .then(product => {
-//       var productlist = product.products;
-//       var recommendedProductMain = document.querySelector('.recommended-product-main .swiper-wrapper');
-//       var section_id = 'main-recommended-product';
-
-//       productlist.forEach(val => {
-//         var productBody = document.createElement('div');
-//         productBody.className = 'recommended-product-body swiper-slide';
-
-//         productBody.innerHTML = `
-//         <div class="recommended-product-child">
-//           <div class="recommended-image">
-//             <a href="${val.url}" class="featured-image-wrap">
-//               <img src="${val.featured_image}" alt="${val.title}">
-//             </a>
-//           </div>
-//           <div class="recommended-title">
-//             <a href="${val.url}">${val.title}</a>
-//           </div>
-//           <div class="add_cart">
-//             <p class="product-block__price">${Shopify.formatMoney(val.price,Shopify.money_format)}</p>
-//             <product-form data-section-id="${section_id}">
-//                <form method="post" action="/cart/add" id="quick-add-${section_id}-${val.id}" accept-charset="UTF-8" class="form" enctype="multipart/form-data" novalidate="novalidate" data-type="add-to-cart-form">
-//                  <input type="hidden" name="form_type" value="product">
-//                  <input type="hidden" name="utf8" value="✓">
-//                  <input type="hidden" name="id" value="${val.variants[0].id}" class="product-variant-id">
-//                  <button id="quick-add-${section_id}-${val.id}-submit" type="submit" name="add" class="quick-add__submit button" aria-haspopup="dialog" aria-labelledby="quick-add-template--16433219108943__new_featured_collection_zYhYLN2416047751247-submit title-template--16433219108943__new_featured_collection_zYhYLN-2416047751247" aria-live="polite" data-sold-out-message="true">
-//                    <span>Add to Cart <span class="cart_plus">+</span></span>                 
-//                     <div class="loading__spinner hidden">
-//                       <svg xmlns="http://www.w3.org/2000/svg" class="spinner" viewBox="0 0 66 66">
-//                         <circle stroke-width="6" cx="33" cy="33" r="30" fill="none" class="path"></circle>
-//                       </svg>
-//                     </div>
-//                  </button>
-//                  <input type="hidden" name="product-id" value="${val.id}">
-//                  <input type="hidden" name="section-id" value="${section_id}"></form>
-//             </product-form>
-//           </div>
-//         </div>
-//         `;
-
-//         recommendedProductMain.appendChild(productBody);
-//       });
-//     })
-//     .catch(error => console.error('Error fetching product data:', error));
-// }
-
-
-// document.addEventListener("DOMContentLoaded", (event) => {
-// recommendedpr();
-
-// var swiper = new Swiper(".recommended-product-main", {
-//   slidesPerView: 2.4,
-//   spaceBetween: 12,
-//   navigation: {
-//     nextEl: ".swiper-button-next",
-//     prevEl: ".swiper-button-prev",
-//   },
-//    breakpoints: {
-//   // when window width is >= 320px
-//   300: {
-//     slidesPerView: 1.7,
-//     spaceBetween: 12
-//   },
-//   // when window width is >= 480px
-//   749: {
-//     slidesPerView: 2.4,
-//     spaceBetween: 12
-//   },
-  
-//   }
-// });
-// });

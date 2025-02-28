@@ -520,34 +520,6 @@
         {%- endif -%}
       {%- endif -%}
 
-      {% comment %}
-      {% if settings.show_product_recommendations %}
-        {% if cart != empty %}
-          <div class="mini-cart-recommendation">
-            <div class="mini-cart-recommendation-head">
-              <h2 class="recommendation-inner-text">{{ settings.title }}</h2>
-              <div class="recommendation-inner-btn">
-                <div class="swiper-button-prev swiper-button-prev--{{ section.id }}">
-                  {{- 'prev-arrow-icon.svg' | inline_asset_content -}}
-                </div>
-                <div class="swiper-button-next swiper-button-next--{{ section.id }}">
-                  {{- 'next-arrow-icon.svg' | inline_asset_content -}}
-                </div>
-              </div>
-            </div>
-            <div
-              class="recommended-product"
-              data-id="/recommendations/products.json?product_id={{ cart.items[0].product_id }}"
-            >
-              <div class="recommended-product-main swiper">
-                <div class="swiper-wrapper"></div>
-              </div>
-            </div>
-          </div>
-        {% endif %}
-      {% endif %}
-      {% endcomment %}
-
 
 
       <div class="drawer__footer">

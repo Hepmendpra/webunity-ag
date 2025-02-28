@@ -136,3 +136,11 @@ class CartDrawerItems extends CartItems {
 customElements.define('cart-drawer-items', CartDrawerItems);
 
 
+var swiper = new Swiper(".cart_collection .cart-coll-slider", {
+  slidesPerView: "auto",
+  spaceBetween: 12,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
