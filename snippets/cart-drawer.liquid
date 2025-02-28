@@ -558,8 +558,7 @@
                                   >
                                     <span>
                                       {%- if cart_item.selected_or_first_available_variant.available -%}
-                                        Add to Cart - 
-                                        <span class="selling-plan-price">{{cart_item.selected_or_first_available_selling_plan_allocation.checkout_charge_amount | money }}</span>
+                                        Add to Cart +
                                       {%- else -%}
                                         {{ 'products.product.sold_out' | t }}
                                       {%- endif -%}
